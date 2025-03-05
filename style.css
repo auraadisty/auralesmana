@@ -1,16 +1,15 @@
-/* Reset dasar */
 body {
     font-family: "Times New Roman", Times, serif;
-    background-color: #f0f8ff; /* Warna putih gading */
-    color: black; /* Warna teks hitam */
+    background-color: #f0f8ff; 
+    color: black;
     text-align: center;
     margin: 0;
     padding: 0;
 }
 
-/* Header */
+
 header {
-    background-color: #026b5b; /* Warna emerald */
+    background-color: #026b5b; 
     padding: 15px;
 }
 
@@ -19,7 +18,7 @@ header h1 {
     margin: 0;
 }
 
-/* Navigasi */
+
 nav ul {
     list-style: none;
     padding: 0;
@@ -37,7 +36,6 @@ nav ul li a {
     font-weight: bold;
 }
 
-/* Kotak utama */
 .welcome-box {
     background-color: white;
     padding: 20px;
@@ -49,9 +47,9 @@ nav ul li a {
     text-align: left;
 }
 
-/* Heading */
+
 h2 {
-    color: #026b5b; /* Warna emerald */
+    color: #026b5b; 
     text-align: center;
 }
 
@@ -70,7 +68,7 @@ a:hover {
     text-decoration: underline;
 }
 
-/* Footer */
+
 footer {
     background-color: #026b5b;
     color: white;
