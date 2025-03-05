@@ -1,13 +1,82 @@
+/* Reset dasar */
 body {
-    background-color: ivory; 
     font-family: "Times New Roman", Times, serif;
-    color: black; 
-    text-align: center; 
+    background-color: #f0f8ff; /* Warna putih gading */
+    color: black; /* Warna teks hitam */
+    text-align: center;
     margin: 0;
     padding: 0;
 }
 
+/* Header */
+header {
+    background-color: #026b5b; /* Warna emerald */
+    padding: 15px;
+}
 
-h1, h2, h3, h4, h5, h6 {
-    color: emerald; 
+header h1 {
+    color: white;
+    margin: 0;
+}
+
+/* Navigasi */
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 10px 0 0 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* Kotak utama */
+.welcome-box {
+    background-color: white;
+    padding: 20px;
+    margin: 20px auto;
+    width: 80%;
+    max-width: 800px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    text-align: left;
+}
+
+/* Heading */
+h2 {
+    color: #026b5b; /* Warna emerald */
+    text-align: center;
+}
+
+h3 {
+    color: #026b5b;
+}
+
+/* Link */
+a {
+    color: #026b5b;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Footer */
+footer {
+    background-color: #026b5b;
+    color: white;
+    padding: 10px;
+    margin-top: 20px;
+    position: relative;
+    bottom: 0;
+    width: 100%;
 }
