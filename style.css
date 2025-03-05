@@ -1,11 +1,14 @@
+/* Mengatur latar belakang laman */
 body {
-    font-family: Arial, sans-serif;
-    background-color: #f4ff00;
-    margin: 3;
-    padding: 3;
+    background-color: ivory; /* Warna putih gading */
+    font-family: "Times New Roman", Times, serif;
+    color: black; /* Warna font hitam */
+    text-align: center; /* Posisi teks di tengah */
+    margin: 0;
+    padding: 0;
 }
 
-h1 {
-    color: #333;
-    text-align: center;
+/* Mengatur warna heading title (h1, h2, dst.) */
+h1, h2, h3, h4, h5, h6 {
+    color: emerald; /* Warna emerald */
 }
