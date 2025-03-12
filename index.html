@@ -36,12 +36,19 @@
     <footer>
         &copy; 2025 Aura Adisty Lesmana
     </footer>
-     <script>
-    document.addEventListener("DOMContentLoaded", function() {
-        // Menambahkan animasi ke elemen judul dan paragraf
-        document.querySelector("h1").classList.add("animated");
-        document.querySelector("p").classList.add("animated");
-    });
-</script>          
+   <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const navbar = document.querySelector("nav");
+
+            navbar.addEventListener("mouseover", function () {
+                navbar.style.background = "linear-gradient(45deg, #ff6347, #ffa500, #32cd32, #1e90ff, #ff1493)";
+                navbar.style.transition = "background 1s ease-in-out";
+            });
+
+            navbar.addEventListener("mouseout", function () {
+                navbar.style.background = "linear-gradient(45deg, #ff0000, #ff7300, #ffeb00, #00ff00, #007bff, #4b0082, #ff00ff)";
+            });
+        });
+    </script>   
 </body>
 </html>
