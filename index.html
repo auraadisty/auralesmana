@@ -7,9 +7,13 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body> 
-    <script>
-       alert("Welcome to Perpustakaan Aura")
-    </script>
+    <p id="teks">Ubah warna teks</p>
+<button onclick="ubahWarna()">Ubah Warna</button>
+<script>
+  function ubahWarna() {
+    document.getElementById("teks").style.color = "red";
+  }
+</script>
     <header>
         <h1>PERPUSTAKAAN AURA</h1>
         <nav>
