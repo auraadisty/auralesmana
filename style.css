@@ -47,26 +47,44 @@ header h1 {
     margin: 0;
 }
 
-/* Navigasi */
+nav {
+    position: relative;
+    background: linear-gradient(45deg, #ff0000, #ff7300, #ffeb00, #00ff00, #007bff, #4b0082, #ff00ff);
+    background-size: 400% 400%;
+    transition: background-position 0.5s ease;
+    padding: 10px;
+    text-align: center;
+}
+
 nav ul {
     list-style: none;
     padding: 0;
-    margin: 10px 0 0 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
 }
 
 nav ul li {
-    display: inline;
     margin: 0 15px;
 }
 
 nav ul li a {
-    color: white;
     text-decoration: none;
-    font-weight: bold;
+    color: white;
+    font-size: 18px;
+    padding: 10px 15px;
+    display: inline-block;
+    transition: background 0.5s, color 0.3s;
 }
 
-nav ul li a:hover {
-    text-decoration: underline;
+nav:hover {
+    animation: animateBackground 3s infinite linear;
+}
+
+@keyframes animateBackground {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
 }
 
 /* Heading */
