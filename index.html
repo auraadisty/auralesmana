@@ -7,8 +7,13 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body> 
-    <script> 
-        alert("Welcome to Perpustakaan Aura")
+   <p id="pesan">Teks akan berubah...</p>
+    <button onclick="ubahTeks()">Klik Saya</button>
+
+    <script>
+        function ubahTeks() {
+            document.getElementById("pesan").innerHTML = "Teks berubah setelah tombol diklik!";
+        }
     </script>
     <header>
         <h1>PERPUSTAKAAN AURA</h1>
