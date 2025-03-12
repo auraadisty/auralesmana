@@ -37,18 +37,17 @@
         &copy; 2025 Aura Adisty Lesmana
     </footer>
    <script>
-        document.addEventListener("DOMContentLoaded", function () {
-            const navbar = document.querySelector("nav");
+    document.addEventListener("DOMContentLoaded", function () {
+        const navbar = document.querySelector("nav");
 
-            navbar.addEventListener("mouseover", function () {
-                navbar.style.background = "linear-gradient(45deg, #ff6347, #ffa500, #32cd32, #1e90ff, #ff1493)";
-                navbar.style.transition = "background 1s ease-in-out";
-            });
-
-            navbar.addEventListener("mouseout", function () {
-                navbar.style.background = "linear-gradient(45deg, #ff0000, #ff7300, #ffeb00, #00ff00, #007bff, #4b0082, #ff00ff)";
-            });
+        navbar.addEventListener("mouseover", function () {
+            navbar.style.background = "rgba(255, 235, 205, 0.9)"; // Warna cream saat hover
         });
-    </script>   
+
+        navbar.addEventListener("mouseout", function () {
+            navbar.style.background = "maroon"; // Kembali ke warna maroon
+        });
+    });
+</script>  
 </body>
 </html>
