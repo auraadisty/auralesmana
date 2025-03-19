@@ -29,13 +29,27 @@ header h1 {
     margin: 0;
 }
 
-nav {
+/* Gaya dasar navbar */
+header {
     display: flex;
-    justify-content: center;
-    background: maroon;
+    justify-content: space-between;
+    align-items: center;
+    background-color: maroon;
     padding: 10px;
+    color: white;
 }
 
+/* Sembunyikan tombol menu di layar besar */
+.menu-toggle {
+    display: none;
+    font-size: 24px;
+    background: none;
+    border: none;
+    color: white;
+    cursor: pointer;
+}
+
+/* Navbar default untuk layar besar */
 nav ul {
     list-style: none;
     display: flex;
@@ -44,26 +58,51 @@ nav ul {
 }
 
 nav ul li {
-    margin: 0 5px; 
+    margin: 0 5px;
 }
 
 nav ul li a {
     display: block;
     padding: 10px 20px;
-    background: #D2B48C; 
+    background: #D2B48C;
     color: maroon;
     font-weight: bold;
     text-decoration: none;
-    border-radius: 5px; 
-    transition: background 0.3s, transform 0.2s;
+    border-radius: 5px;
+    transition: background 0.3s;
 }
 
 nav ul li a:hover {
-    background: #A52A2A; 
-    color: #fff; 
-    transform: scale(1.05); 
+    background: #A52A2A;
+    color: white;
 }
 
+/* Media query: Saat layar kecil (HP) */
+@media (max-width: 768px) {
+    .menu-toggle {
+        display: block; /* Tampilkan tombol menu */
+    }
+
+    nav ul {
+        display: none; /* Sembunyikan menu awalnya */
+        flex-direction: column;
+        position: absolute;
+        top: 50px;
+        left: 0;
+        width: 100%;
+        background-color: maroon;
+        padding: 10px;
+    }
+
+    nav ul.show {
+        display: flex; /* Munculkan menu saat tombol ditekan */
+    }
+
+    nav ul li {
+        text-align: center;
+        margin: 5px 0;
+    }
+}
 h2 {
     color: #731210; 
     text-align: center;
