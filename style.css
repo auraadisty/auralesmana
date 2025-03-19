@@ -178,20 +178,6 @@ p {
     height: 100%;
     background-color: rgba(0,0,0,0.5);
 }
-
-.modal-content {
-    background-color: white;
-    margin: 10% auto;
-    padding: 20px;
-    width: 50%;
-    border-radius: 8px;
-}
-
-.close {
-    float: right;
-    font-size: 28px;
-    cursor: pointer;
-}
 footer {
     background-color: #4e0d0b;
     color: #f8e6d1;
