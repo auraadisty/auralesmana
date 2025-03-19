@@ -178,6 +178,26 @@ p {
     height: 100%;
     background-color: rgba(0,0,0,0.5);
 }
+table {
+    background-color: #f8e7d1; /* Warna krem sama seperti form */
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th, td {
+    border: 2px solid black; /* Garis tabel */
+    padding: 10px;
+}
+
+th {
+    background-color: #d4b499; /* Warna header tabel */
+    color: black;
+}
+
+tr:hover {
+    background-color: #e6c7a6; /* Warna hover */
+    transition: 0.3s;
+}
 
 footer {
     background-color: #4e0d0b;
