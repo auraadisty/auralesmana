@@ -191,7 +191,7 @@ p {
     background-color: #e6c7a6 !important;
 }
 /* Efek hover pada header (Informasi & Detail) */
-.table th {
+table th {
     background-color: #d4b499;
     color: black;
     padding: 10px;
@@ -199,22 +199,23 @@ p {
     transition: background-color 0.3s ease, color 0.3s ease;
 }
 
-.table th:hover {
+table th:hover {
     background-color: #b89575; /* Warna lebih gelap saat hover */
-    color: white; /* Ubah warna teks saat hover */
+    color: white;
 }
 
 /* Efek hover pada sel tabel */
-.table td {
+table td {
     border: 2px solid black;
     padding: 10px;
     transition: background-color 0.3s ease, color 0.3s ease;
 }
 
-.table td:hover {
+table td:hover {
     background-color: #e6c7a6; /* Warna lebih terang saat hover */
     color: black;
 }
+
 footer {
     background-color: #4e0d0b;
     color: #f8e6d1;
