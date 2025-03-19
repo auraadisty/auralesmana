@@ -1,35 +1,31 @@
-
-/* Reset dasar */
 body {
     font-family: "Times New Roman", Times;
-    background-color: #731210; /* Warna maroon */
+    background-color: #731210; 
     color: white;
     text-align: center;
     margin: 30;
     padding: 20;
 }
 
-/* Container utama */
 .container {
-    background-color: #f8e6d1; /* Warna krem */
+    background-color: #f8e6d1; 
     width: 80%;
     max-width: 800px;
     margin: 30px auto;
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
-    color: black; /* Warna teks hitam */
+    color: black; 
     text-align: justify;
 }
 
-/* Header */
 header {
-    background-color: #4e0d0b; /* Warna maroon tua */
+    background-color: #4e0d0b; 
     padding: 15px;
 }
 
 header h1 {
-    color: #f8e6d1; /* Warna krem */
+    color: #f8e6d1; 
     margin: 0;
 }
 
@@ -48,34 +44,31 @@ nav ul {
 }
 
 nav ul li {
-    margin: 0 5px; /* Memberi jarak antar tombol */
+    margin: 0 5px; 
 }
 
 nav ul li a {
     display: block;
     padding: 10px 20px;
-    background: #D2B48C; /* Warna cream */
+    background: #D2B48C; 
     color: maroon;
     font-weight: bold;
     text-decoration: none;
-    border-radius: 5px; /* Membuat sudut tombol membulat */
+    border-radius: 5px; 
     transition: background 0.3s, transform 0.2s;
 }
 
 nav ul li a:hover {
-    background: #A52A2A; /* Warna maroon lebih gelap saat hover */
-    color: #fff; /* Warna teks menjadi putih */
-    transform: scale(1.05); /* Efek sedikit membesar */
+    background: #A52A2A; 
+    color: #fff; 
+    transform: scale(1.05); 
 }
 
-
-/* Heading */
 h2 {
-    color: #731210; /* Warna maroon */
+    color: #731210; 
     text-align: center;
 }
 
-/* Link */
 a {
     color: #731210;
     text-decoration: none;
@@ -86,32 +79,31 @@ a:hover {
     text-decoration: underline;
 }
 
-/* Form Styling */
 form {
-    width: 80%; /* Menyesuaikan lebar formulir */
-    max-width: 600px; /* Maksimal lebar form */
-    margin: 0 auto; /* Membuatnya berada di tengah */
+    width: 80%; 
+    max-width: 600px; 
+    margin: 0 auto; 
 }
 
 input, textarea {
-    width: 100%; /* Membuat input dan textarea memenuhi lebar form */
+    width: 100%; 
     padding: 10px;
-    border: 1px solid #731210; /* Warna maroon */
+    border: 1px solid #731210; 
     border-radius: 5px;
     font-size: 16px;
-    background-color: #f8e6d1; /* Warna krem */
-    color: #731210; /* Warna teks maroon */
+    background-color: #f8e6d1; 
+    color: #731210; 
 }
 
 input:focus, textarea:focus {
-    border-color: #A52A2A; /* Warna maroon lebih gelap saat fokus */
+    border-color: #A52A2A; 
     outline: none;
     box-shadow: 0px 0px 5px rgba(165, 42, 42, 0.5);
 }
 
 /* Tombol Kirim */
 button {
-    background-color: #A52A2A; /* Warna maroon lebih gelap */
+    background-color: #A52A2A; 
     color: white;
     padding: 10px 15px;
     border: none;
@@ -121,14 +113,12 @@ button {
 }
 
 button:hover {
-    background-color: #731210; /* Warna maroon lebih pekat saat hover */
+    background-color: #731210;
 }
 
-/* Warna untuk Judul */
 h1, h2, h3, h4, h5, h6 {
-    color: #731210; /* Warna maroon */
+    color: #731210; 
 }
-
 
 p, label, li, span, input::placeholder, textarea::placeholder {
     color: black;
@@ -138,11 +128,11 @@ p {
 }
 
 .container a {
-    color: black; /* Warna hitam untuk teks di dalam container */
+    color: black; 
 }
 
 .container a:hover {
-    color: #731210; /* Warna maroon saat kursor diarahkan */
+    color: #731210; 
 }
 .container {
     text-align: left;
@@ -151,7 +141,6 @@ p {
 .container form {
     display: block;
 }
-/* Sembunyikan form awalnya */
 .form-container {
     display: none;
     position: absolute;
@@ -164,7 +153,6 @@ p {
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
 }
 
-/* Tampilkan form saat dihover */
 .trigger:hover + .form-container {
     display: block;
 }
@@ -190,7 +178,6 @@ p {
 .table tbody tr:hover {
     background-color: #e6c7a6 !important;
 }
-/* Efek hover pada header (Informasi & Detail) */
 table th {
     background-color: #d4b499;
     color: black;
@@ -200,11 +187,10 @@ table th {
 }
 
 table th:hover {
-    background-color: #b89575; /* Warna lebih gelap saat hover */
+    background-color: #b89575; 
     color: white;
 }
 
-/* Efek hover pada sel tabel */
 table td {
     border: 2px solid black;
     padding: 10px;
@@ -212,7 +198,7 @@ table td {
 }
 
 table td:hover {
-    background-color: #e6c7a6; /* Warna lebih terang saat hover */
+    background-color: #e6c7a6; 
     color: black;
 }
 
