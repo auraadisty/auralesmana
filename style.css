@@ -133,6 +133,10 @@ h1, h2, h3, h4, h5, h6 {
 p, label, li, span, input::placeholder, textarea::placeholder {
     color: black;
 }
+p {
+    text-align: justify;
+}
+
 .container a {
     color: black; /* Warna hitam untuk teks di dalam container */
 }
