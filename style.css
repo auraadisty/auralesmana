@@ -201,9 +201,13 @@ table td:hover {
     background-color: #e6c7a6; 
     color: black;
 }
+
 .logo-gif {
-    width: 20px;  /* Sesuaikan ukuran gambar */
+    width: 50px; /* Sesuaikan ukuran */
     height: auto;
+    position: absolute;
+    top: 10px;
+    left: 10px;
 }
 footer {
     background-color: #4e0d0b;
