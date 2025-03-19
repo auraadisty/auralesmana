@@ -114,6 +114,20 @@ button {
 button:hover {
     background-color: #731210; /* Warna lebih gelap saat hover */
 }
+.btn-baca {
+    background-color: maroon; /* Warna maroon */
+    color: white; /* Warna teks */
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    text-decoration: none;
+    display: inline-block;
+    transition: background 0.3s;
+}
+
+.btn-baca:hover {
+    background-color: #731210; /* Warna lebih gelap saat hover */
+}
 
 h1, h2, h3, h4, h5, h6 {
     color: #731210; 
