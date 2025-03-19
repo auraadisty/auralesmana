@@ -86,6 +86,44 @@ a:hover {
     text-decoration: underline;
 }
 
+/* Form Styling */
+form {
+    width: 80%; /* Menyesuaikan lebar formulir */
+    max-width: 600px; /* Maksimal lebar form */
+    margin: 0 auto; /* Membuatnya berada di tengah */
+}
+
+input, textarea {
+    width: 100%; /* Membuat input dan textarea memenuhi lebar form */
+    padding: 10px;
+    border: 1px solid #731210; /* Warna maroon */
+    border-radius: 5px;
+    font-size: 16px;
+    background-color: #f8e6d1; /* Warna krem */
+    color: #731210; /* Warna teks maroon */
+}
+
+input:focus, textarea:focus {
+    border-color: #A52A2A; /* Warna maroon lebih gelap saat fokus */
+    outline: none;
+    box-shadow: 0px 0px 5px rgba(165, 42, 42, 0.5);
+}
+
+/* Tombol Kirim */
+button {
+    background-color: #A52A2A; /* Warna maroon lebih gelap */
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+button:hover {
+    background-color: #731210; /* Warna maroon lebih pekat saat hover */
+}
+
 /* Footer */
 footer {
     background-color: #4e0d0b;
