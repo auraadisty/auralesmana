@@ -26,20 +26,28 @@
         <li><a href="#">Kunjungi Instagram</a></li>
     </ul>
 
-    <p>Atau, Anda bisa mengisi formulir di bawah ini:</p>
-    <form> 
+    <!-- Trigger untuk menampilkan form -->
+<p class="trigger">Arahkan kursor ke sini untuk mengisi formulir</p>
+
+<!-- Overlay untuk efek pop-up -->
+<div class="overlay"></div>
+
+<!-- Formulir yang akan muncul sebagai pop-up -->
+<div class="form-container">
     <form action="https://formsubmit.co/adistyauralesmana@gmail.com" method="POST">
-        <label>Nama</label><br>
-        <input type="text" placeholder="Masukkan nama Anda"><br><br>
+        <label>Nama</label>
+        <input type="text" placeholder="Masukkan nama Anda">
 
-        <label>Email</label><br>
-        <input type="email" placeholder="Masukkan email Anda"><br><br>
+        <label>Email</label>
+        <input type="email" placeholder="Masukkan email Anda">
 
-        <label>Pesan</label><br>
-        <textarea placeholder="Tulis pesan Anda"></textarea><br><br>
+        <label>Pesan</label>
+        <textarea placeholder="Tulis pesan Anda"></textarea>
 
         <button type="submit">Kirim</button>
+        <button type="button" class="close-btn">Tutup</button>
     </form>
+</div>
 
     <br>
     <a href="index.html">Kembali ke Beranda</a>
