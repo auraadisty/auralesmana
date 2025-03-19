@@ -101,10 +101,9 @@ input:focus, textarea:focus {
     box-shadow: 0px 0px 5px rgba(165, 42, 42, 0.5);
 }
 
-/* Tombol Kirim */
 button {
-    background-color: #A52A2A; 
-    color: white;
+    background-color: maroon; 
+    color: white; 
     padding: 10px 15px;
     border: none;
     border-radius: 5px;
@@ -113,7 +112,7 @@ button {
 }
 
 button:hover {
-    background-color: #731210;
+    background-color: #731210; /* Warna lebih gelap saat hover */
 }
 
 h1, h2, h3, h4, h5, h6 {
