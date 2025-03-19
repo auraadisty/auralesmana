@@ -124,6 +124,16 @@ button:hover {
     background-color: #731210; /* Warna maroon lebih pekat saat hover */
 }
 
+/* Warna untuk Judul */
+h1, h2, h3, h4, h5, h6 {
+    color: #731210; /* Warna maroon */
+}
+
+/* Warna untuk Isi dan Keterangan */
+p, label, li, span, input::placeholder, textarea::placeholder {
+    color: black;
+}
+
 /* Footer */
 footer {
     background-color: #4e0d0b;
