@@ -178,24 +178,30 @@ p {
     height: 100%;
     background-color: rgba(0,0,0,0.5);
 }
-table {
-    background-color: #f8e7d1; /* Warna krem sama seperti form */
+/* Warna background tabel agar sama dengan form */
+.table {
+    background-color: #f8e7d1; /* Warna krem */
     width: 100%;
     border-collapse: collapse;
 }
 
-th, td {
-    border: 2px solid black; /* Garis tabel */
+/* Styling header tabel */
+.table th {
+    background-color: #d4b499; /* Warna header agar sedikit lebih gelap */
+    color: black;
+    padding: 10px;
+    text-align: left;
+}
+
+/* Styling sel tabel */
+.table td {
+    border: 2px solid black; /* Tambahkan garis tabel */
     padding: 10px;
 }
 
-th {
-    background-color: #d4b499; /* Warna header tabel */
-    color: black;
-}
-
-tr:hover {
-    background-color: #e6c7a6; /* Warna hover */
+/* Efek hover pada baris tabel */
+.table tbody tr:hover {
+    background-color: #e6c7a6; /* Warna hover agar lebih terang */
     transition: 0.3s;
 }
 
