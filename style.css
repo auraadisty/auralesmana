@@ -79,12 +79,8 @@ nav ul li a:hover {
 
 /* Media query: Saat layar kecil (HP) */
 @media (max-width: 768px) {
-    .menu-toggle {
-        display: block; /* Tampilkan tombol menu */
-    }
-
     nav ul {
-        display: none; /* Sembunyikan menu awalnya */
+        display: none;
         flex-direction: column;
         position: absolute;
         top: 50px;
@@ -92,6 +88,7 @@ nav ul li a:hover {
         width: 100%;
         background-color: maroon;
         padding: 10px;
+        z-index: 1000; /* Tambahkan agar tidak tertutup elemen lain */
     }
 
     nav ul.show {
