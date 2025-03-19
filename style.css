@@ -129,12 +129,18 @@ h1, h2, h3, h4, h5, h6 {
     color: #731210; /* Warna maroon */
 }
 
-/* Warna untuk Isi dan Keterangan */
+
 p, label, li, span, input::placeholder, textarea::placeholder {
     color: black;
 }
+.container a {
+    color: black; /* Warna hitam untuk teks di dalam container */
+}
 
-/* Footer */
+.container a:hover {
+    color: #731210; /* Warna maroon saat kursor diarahkan */
+}
+
 footer {
     background-color: #4e0d0b;
     color: #f8e6d1;
