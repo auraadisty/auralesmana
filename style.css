@@ -178,6 +178,14 @@ p {
     height: 100%;
     background-color: rgba(0,0,0,0.5);
 }
+table {
+    background-color: #f8e7d1; /* Warna krem */
+}
+
+th, td {
+    border: 1px solid black; /* Garis tabel */
+    padding: 10px;
+}
 footer {
     background-color: #4e0d0b;
     color: #f8e6d1;
