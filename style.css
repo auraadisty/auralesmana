@@ -28,9 +28,7 @@ header h1 {
     color: #f8e6d1; 
     margin: 0;
 }
-
-/* Gaya dasar navbar */
-header {
+header, section {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -39,7 +37,6 @@ header {
     color: white;
 }
 
-/* Sembunyikan tombol menu di layar besar */
 .menu-toggle {
     display: none;
     font-size: 24px;
@@ -297,10 +294,11 @@ table td:hover {
 }
 
 footer {
-    background-color: #4e0d0b;
-    color: #f8e6d1;
-    padding: 10px;
-    margin-top: 20px;
-    text-align: center;
+    position: absolute;
+    bottom: 0;
     width: 100%;
+    background-color: #maroon;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
 }
