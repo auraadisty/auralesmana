@@ -215,7 +215,7 @@ p {
 table th {
     background-color: #d4b499;
     color: black;
-    padding: 12px;
+    padding: 14px;
     text-align: left;
     transition: background-color 0.3s ease, color 0.3s ease;
 }
@@ -233,7 +233,7 @@ table {
 
 table td, table th {
     border: 2px solid black;
-    padding: 12px; /* Tambahkan padding agar teks lebih nyaman dibaca */
+    padding: 14px; /* Tambahkan padding agar teks lebih nyaman dibaca */
     font-size: 16px; /* Perbesar ukuran teks agar lebih jelas */
     transition: background-color 0.3s ease, color 0.3s ease;
 }
