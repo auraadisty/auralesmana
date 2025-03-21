@@ -272,27 +272,33 @@ table td:hover {
     margin-top: 20px;
 }
 
+/* Pastikan ukuran gambar tetap seragam */
 .book-card {
     background-color: #f8e6d1;
     border-radius: 10px;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
     padding: 15px;
-    width: 200px;
+    width: 180px; /* Ukuran lebih kecil agar tidak terlalu besar di HP */
     text-align: center;
     transition: transform 0.3s ease;
+    flex: 1 1 calc(33.333% - 40px); /* Buat grid 3 kolom di layar besar */
+    max-width: 200px;
 }
 
 .book-card:hover {
     transform: scale(1.05);
 }
 
+/* Gambar tetap proporsional */
 .book-card img {
     width: 100%;
+    height: 250px; /* Atur tinggi biar seragam */
+    object-fit: cover; /* Hindari gambar melar */
     border-radius: 5px;
 }
 
 .book-card h3 {
-    font-size: 18px;
+    font-size: 16px;
     color: #731210;
     margin: 10px 0 5px;
 }
@@ -300,6 +306,22 @@ table td:hover {
 .book-card p {
     font-size: 14px;
     color: black;
+}
+
+/* Responsif: di layar kecil, jadi 2 kolom */
+@media (max-width: 768px) {
+    .book-card {
+        flex: 1 1 calc(50% - 40px); /* Jadi 2 kolom */
+        max-width: 180px;
+    }
+}
+
+/* Responsif: di layar HP kecil, jadi 1 kolom */
+@media (max-width: 480px) {
+    .book-card {
+        flex: 1 1 100%; /* Satu kolom penuh */
+        max-width: 200px;
+    }
 }
 
 footer {
