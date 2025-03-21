@@ -266,10 +266,11 @@ table td:hover {
 }
 .book-container {
     display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
+    flex-wrap: nowrap; /* Supaya tetap horizontal */
+    overflow-x: auto; /* Tambahkan scroll horizontal jika banyak buku */
     gap: 20px;
-    margin-top: 20px;
+    justify-content: flex-start; /* Susunan dari kiri ke kanan */
+    padding: 20px;
 }
 
 .book-card {
@@ -277,48 +278,17 @@ table td:hover {
     border-radius: 10px;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
     padding: 15px;
-    width: 200px;
+    width: 200px; /* Ukuran tetap agar seragam */
     text-align: center;
+    flex-shrink: 0; /* Mencegah buku mengecil jika tidak cukup ruang */
     transition: transform 0.3s ease;
-}
-
-.book-card:hover {
-    transform: scale(1.05);
 }
 
 .book-card img {
     width: 100%;
+    height: 250px; /* Atur tinggi gambar agar seragam */
+    object-fit: cover; /* Memastikan gambar tidak terdistorsi */
     border-radius: 5px;
-}
-
-.book-card h3 {
-    font-size: 18px;
-    color: #731210;
-    margin: 10px 0 5px;
-}
-
-.book-card p {
-    font-size: 14px;
-    color: black;
-}
-
-.book-card:hover {
-    transform: scale(1.05);
-}
-
-@media (max-width: 768px) {
-    .book-card {
-        flex: 1 1 calc(50% - 40px); /* Jadi 2 kolom */
-        max-width: 180px;
-    }
-}
-
-/* Responsif: di layar HP kecil, jadi 1 kolom */
-@media (max-width: 480px) {
-    .book-card {
-        flex: 1 1 100%; /* Satu kolom penuh */
-        max-width: 200px;
-    }
 }
 
 footer {
