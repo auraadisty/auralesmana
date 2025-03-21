@@ -244,6 +244,16 @@ table td {
     padding: 12px;
     transition: background-color 0.3s ease, color 0.3s ease;
 }
+table {
+    width: 90%; /* Perbesar tabel agar lebih lebar */
+    margin: 20px auto; /* Tengahkan tabel */
+    border-collapse: collapse; /* Hilangkan jarak antar border */
+}
+
+td, th {
+    padding: 15px; /* Tambahkan padding agar teks lebih nyaman dibaca */
+    font-size: 18px; /* Perbesar ukuran teks agar lebih jelas */
+}
 
 table td:hover {
     background-color: #e6c7a6; 
