@@ -292,7 +292,7 @@ table td:hover {
 /* Gambar tetap proporsional */
 .book-card img {
     width: 100%;
-    height: 200px; /* Sesuaikan tinggi agar seragam */
+    height: 150px; /* Sesuaikan tinggi agar seragam */
     object-fit: cover; /* Memastikan gambar tidak melar */
     border-radius: 5px;
 }
