@@ -117,7 +117,7 @@ a:hover {
 form {
     width: 80%; 
     max-width: 600px; 
-    margin: 5; 
+    margin-bottom: 15px;
 }
 
 input, textarea {
@@ -129,6 +129,7 @@ input, textarea {
     font-size: 16px;
     background-color: #f8e6d1; 
     color: #731210; 
+    margin-bottom: 15px;
 }
 
 input:focus, textarea:focus {
