@@ -91,10 +91,16 @@ nav ul li a:hover {
         z-index: 1000; /* Tambahkan agar tidak tertutup elemen lain */
     }
 
-    nav ul.show {
-        display: flex; /* Munculkan menu saat tombol ditekan */
-    }
-
+   nav ul.show {
+    display: flex !important;
+    flex-direction: column;
+    position: absolute;
+    top: 60px; /* Sesuaikan dengan tinggi navbar */
+    left: 0;
+    width: 100%;
+    background: maroon;
+    padding: 10px 0;
+}
     nav ul li {
         text-align: center;
         margin: 5px 0;
