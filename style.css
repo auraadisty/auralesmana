@@ -28,8 +28,6 @@ header h1 {
     color: #f8e6d1; 
     margin: 0;
 }
-
-/* Gaya dasar navbar */
 header {
     display: flex;
     justify-content: space-between;
@@ -39,7 +37,6 @@ header {
     color: white;
 }
 
-/* Sembunyikan tombol menu di layar besar */
 .menu-toggle {
     display: none;
     font-size: 24px;
@@ -48,8 +45,6 @@ header {
     color: white;
     cursor: pointer;
 }
-
-/* Navbar default untuk layar besar */
 nav ul {
     list-style: none;
     display: flex;
@@ -76,8 +71,6 @@ nav ul li a:hover {
     background: #A52A2A;
     color: white;
 }
-
-/* Media query: Saat layar kecil (HP) */
 @media (max-width: 768px) {
     nav ul {
         display: none;
@@ -88,10 +81,10 @@ nav ul li a:hover {
         width: 100%;
         background-color: maroon;
         padding: 10px;
-        z-index: 1000; /* Tambahkan agar tidak tertutup elemen lain */
+        z-index: 1000; 
     }
 
-   nav ul.show {
+    nav ul.show {
     display: flex !important;
     flex-direction: column;
     position: absolute;
@@ -157,17 +150,18 @@ button:hover {
     background-color: #731210;
 }
 .btn-baca {
-    display: inline-block;
-    padding: 8px 15px;
     background-color: maroon;
-    color: white;
-    text-decoration: none;
+    color: white; 
+    border: none;
+    padding: 10px 15px;
     border-radius: 5px;
+    text-decoration: none;
+    display: inline-block;
     transition: background 0.3s;
 }
 
 .btn-baca:hover {
-    background-color: #A52A2A;
+    background-color: #731210; 
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -303,8 +297,9 @@ table td:hover {
 
 footer {
     background-color: #4e0d0b;
-    color: white;
-    text-align: center;
+    color: #f8e6d1;
     padding: 10px;
     margin-top: 20px;
+    text-align: center;
+    width: 100%;
 }
