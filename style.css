@@ -240,9 +240,9 @@ table th:hover {
 }
 
 table {
-    width: 70%; /* Perbesar tabel agar lebih lebar */
-    margin: 20px auto; /* Tengahkan tabel */
-    border-collapse: collapse; /* Hilangkan jarak antar border */
+    width: 80%;
+    margin: 20px auto; 
+    border-collapse: collapse; 
 }
 
 table td, table th {
