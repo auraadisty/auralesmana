@@ -151,18 +151,17 @@ button:hover {
     background-color: #731210;
 }
 .btn-baca {
-    background-color: maroon;
-    color: white; 
-    border: none;
-    padding: 10px 15px;
-    border-radius: 5px;
-    text-decoration: none;
     display: inline-block;
+    padding: 8px 15px;
+    background-color: maroon;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
     transition: background 0.3s;
 }
 
 .btn-baca:hover {
-    background-color: #731210; 
+    background-color: #A52A2A;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -298,9 +297,8 @@ table td:hover {
 
 footer {
     background-color: #4e0d0b;
-    color: #f8e6d1;
+    color: white;
+    text-align: center;
     padding: 10px;
     margin-top: 20px;
-    text-align: center;
-    width: 100%;
 }
