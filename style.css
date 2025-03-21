@@ -251,14 +251,14 @@ table td:hover {
     left: 10px;
 }
 
-body {
+.book body {
     font-family: Arial, sans-serif;
     background-color: #f8e6d1;
     margin: 0;
     padding: 0;
 }
 
-.container {
+.book-container {
     max-width: 1200px;
     margin: auto;
     padding: 20px;
