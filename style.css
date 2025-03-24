@@ -229,3 +229,30 @@ footer {
     text-align: center;
     width: 100%;
 }
+.navbar {
+    display: flex;
+    justify-content: center; /* Membuat menu di tengah */
+    background-color: #8B0000; /* Warna merah yang lebih pekat */
+    padding: 10px;
+}
+
+.navbar a {
+    color: #fff; /* Warna teks putih agar lebih kontras */
+    text-decoration: none;
+    padding: 10px 20px;
+    margin: 5px;
+    border-radius: 5px;
+    background-color: #b88d65; /* Warna coklat muda */
+}
+
+.navbar a:hover {
+    background-color: #e6be8a; /* Warna lebih terang saat hover */
+}
+
+.container {
+    max-width: 900px;
+    margin: auto;
+    background-color: #faebd7; /* Warna latar yang lebih lembut */
+    padding: 20px;
+    border-radius: 10px;
+}
