@@ -337,6 +337,18 @@ h2 {
         width: 90%;
     }
 }
+.navbar-nav {
+  text-align: center;
+}
+
+.navbar-toggler {
+  border-color: white;
+}
+
+.dropdown-menu {
+  right: 0;
+  left: auto;
+}
 
 footer {
     background-color: #4e0d0b;
