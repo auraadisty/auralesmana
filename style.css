@@ -349,7 +349,23 @@ h2 {
   right: 0;
   left: auto;
 }
-
+.bg-maroon {
+    background-color: #731210 !important; /* Warna merah tua */
+}
+.navbar-brand {
+    font-size: 20px;
+    font-weight: bold;
+}
+.navbar-toggler {
+    border-color: white;
+}
+.nav-link {
+    color: white !important;
+}
+.nav-link:hover {
+    background-color: #A52A2A;
+    border-radius: 5px;
+}
 footer {
     background-color: #4e0d0b;
     color: #f8e6d1;
