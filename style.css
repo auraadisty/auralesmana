@@ -1,12 +1,14 @@
+/* 1. Styling Global */
 body {
     font-family: "Times New Roman", Times;
     background-color: #731210; 
     color: white;
     text-align: center;
-    margin: 30;
-    padding: 20;
+    margin: 0;
+    padding: 0;
 }
 
+/* 2. Kontainer Utama */
 .container {
     background-color: #f8e6d1; 
     width: 80%;
@@ -19,15 +21,46 @@ body {
     text-align: justify;
 }
 
-header {
-    background-color: #4e0d0b; 
+/* 3. Navbar */
+.navbar {
+    padding: 10px;
+}
+
+.navbar-brand {
+    font-size: 20px;
+    font-weight: bold;
+    color: white !important;
+}
+
+.navbar-toggler {
+    border: none;
+    color: white;
+}
+
+.offcanvas {
+    width: 250px; /* Sidebar lebih kecil */
+}
+
+.offcanvas-body {
     padding: 15px;
 }
 
-header h1 {
-    color: #f8e6d1; 
-    margin: 0;
+.navbar-nav .nav-item {
+    margin-bottom: 10px;
 }
+
+.navbar-nav .nav-link {
+    font-size: 16px;
+    color: white !important;
+    padding: 10px;
+}
+
+.navbar-nav .nav-link:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+    border-radius: 5px;
+}
+
+/* 4. Header */
 header {
     display: flex;
     justify-content: space-between;
@@ -37,7 +70,7 @@ header {
     color: white;
 }
 
-/* Sembunyikan tombol menu di layar besar */
+/* 5. Navigasi untuk Mobile */
 .menu-toggle {
     display: none;
     font-size: 24px;
@@ -47,7 +80,6 @@ header {
     cursor: pointer;
 }
 
-/* Navbar default untuk layar besar */
 nav ul {
     list-style: none;
     display: flex;
@@ -75,7 +107,7 @@ nav ul li a:hover {
     color: white;
 }
 
-/* Media query: Saat layar kecil (HP) */
+/* 6. Responsif */
 @media (max-width: 768px) {
     nav ul {
         display: none;
@@ -86,196 +118,31 @@ nav ul li a:hover {
         width: 100%;
         background-color: maroon;
         padding: 10px;
-        z-index: 1000; /* Tambahkan agar tidak tertutup elemen lain */
+        z-index: 1000;
     }
 
     nav ul.show {
-        display: flex; /* Munculkan menu saat tombol ditekan */
+        display: flex;
     }
 
     nav ul li {
         text-align: center;
         margin: 5px 0;
     }
+
+    .card {
+        width: 90%;
+    }
 }
 
-h2 {
-    color: #731210; 
-    text-align: center;
-}
-
-a {
-    color: #731210;
-    text-decoration: none;
-    font-weight: bold;
-}
-
-a:hover {
-    text-decoration: underline;
-}
-
-form {
-    width: 80%; 
-    max-width: 600px; 
-}
-
-input, textarea {
-    font-family: inherit;
-    width: 100%; 
-    padding: 10px;
-    border: 1px solid #731210; 
-    border-radius: 5px;
-    font-size: 16px;
-    background-color: #f8e6d1; 
-    color: #731210; 
-    display: block;
-    margin: auto;
-
-}
-
-input:focus, textarea:focus {
-    border-color: #A52A2A; 
-    outline: none;
-    box-shadow: 0px 0px 5px rgba(165, 42, 42, 0.5);
-}
-
-label {
-    margin-bottom: 5px; /* Menambah jarak antara label dan input */
-}
-
-button {
-    background-color: maroon; 
-    color: white; 
-    padding: 10px 15px;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: background 0.3s;
-}
-
-button:hover {
-    background-color: #731210;
-}
-
-h1, h2, h3, h4, h5, h6 {
-    color: #731210; 
-}
-
-p, label, li, span, input::placeholder, textarea::placeholder {
-    color: black;
-}
-p {
-    text-align: justify;
-}
-
-.container a {
-    color: black; 
-}
-
-.container a:hover {
-    color: #731210; 
-}
-.container {
-    text-align: left;
-}
-
-.container form {
-    display: block;
-}
-.form-container {
-    display: none;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    background-color: #f8e6d1;
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
-}
-
-.trigger:hover + .form-container {
-    display: block;
-}
-.modal {
-    display: none;
-    position: fixed;
-    z-index: 1;
-    left: 0;
-    top: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0,0,0,0.5);
-}
-.table {
-    background-color: #f8e7d1 !important;
-}
-.table th {
-    background-color: #d4b499 !important;
-}
-.table td {
-    border: 2px solid black !important;
-}
-.table tbody tr:hover {
-    background-color: #e6c7a6 !important;
-}
-table th {
-    background-color: #d4b499;
-    color: black;
-    padding: 14px;
-    text-align: left;
-    transition: background-color 0.3s ease, color 0.3s ease;
-}
-
-table th:hover {
-    background-color: #b89575; 
-    color: white;
-}
-
-table {
-    width: 80%;
-    margin: 20px auto; 
-    border-collapse: collapse; 
-}
-
-table td, table th {
-    border: 2px solid black;
-    padding: 14px; /* Tambahkan padding agar teks lebih nyaman dibaca */
-    font-size: 16px; /* Perbesar ukuran teks agar lebih jelas */
-    transition: background-color 0.3s ease, color 0.3s ease;
-}
-
-table td:hover {
-    background-color: #e6c7a6; 
-    color: black;
-}
-
-.logo-gif {
-    width: 70px; 
-    height: auto;
-    position: absolute;
-    top: 10px;
-    left: 10px;
-}
-
+/* 7. Styling untuk Halaman Koleksi */
 .halaman-koleksi .container {
-    background-color: #fce5cd; /* Warna cream */
+    background-color: #fce5cd;
     padding: 20px;
     border-radius: 10px;
 }
 
-h2 {
-    color: #731210;
-    text-align: center;
-}
-
-.row {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 20px;
-}
-
+/* 8. Card */
 .card {
     background-color: white;
     border-radius: 10px;
@@ -291,11 +158,11 @@ h2 {
 }
 
 .card img {
-    width: 100%; 
-    height: auto; 
-    object-fit: cover; 
-    border-top-left-radius: 10px; 
-    border-top-right-radius: 10px; 
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
 }
 
 .card-body {
@@ -328,44 +195,32 @@ h2 {
     background-color: #a31e1e;
 }
 
-@media (max-width: 768px) {
-    .row {
-        flex-direction: column;
-        align-items: center;
-    }
-    .card {
-        width: 90%;
-    }
-}
-.navbar-nav {
-  text-align: center;
+/* 9. Form Styling */
+form {
+    width: 80%;
+    max-width: 600px;
 }
 
-.navbar-toggler {
-  border-color: white;
-}
-
-.dropdown-menu {
-  right: 0;
-  left: auto;
-}
-.bg-maroon {
-    background-color: #731210 !important; /* Warna merah tua */
-}
-.navbar-brand {
-    font-size: 20px;
-    font-weight: bold;
-}
-.navbar-toggler {
-    border-color: white;
-}
-.nav-link {
-    color: white !important;
-}
-.nav-link:hover {
-    background-color: #A52A2A;
+input, textarea {
+    font-family: inherit;
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #731210;
     border-radius: 5px;
+    font-size: 16px;
+    background-color: #f8e6d1;
+    color: #731210;
+    display: block;
+    margin: auto;
 }
+
+input:focus, textarea:focus {
+    border-color: #A52A2A;
+    outline: none;
+    box-shadow: 0px 0px 5px rgba(165, 42, 42, 0.5);
+}
+
+/* 10. Footer */
 footer {
     background-color: #4e0d0b;
     color: #f8e6d1;
@@ -374,39 +229,3 @@ footer {
     text-align: center;
     width: 100%;
 }
-.navbar {
-  padding: 10px;
-}
-
-.navbar-brand {
-  font-size: 20px;
-  font-weight: bold;
-}
-
-.navbar-toggler {
-  border: none;
-}
-
-.offcanvas {
-  width: 250px; /* Lebar sidebar */
-}
-
-.offcanvas-body {
-  padding: 20px;
-}
-
-.navbar-nav .nav-item {
-  margin-bottom: 10px;
-}
-
-.navbar-nav .nav-link {
-  font-size: 16px;
-  color: white;
-  padding: 10px;
-}
-
-.navbar-nav .nav-link:hover {
-  background-color: rgba(255, 255, 255, 0.2);
-  border-radius: 5px;
-}
-
