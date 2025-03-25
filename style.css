@@ -274,42 +274,31 @@ footer {
     text-align: center;
     width: 100%;
 }
-/* Mengatur navbar agar sejajar */
-.navbar {
-    display: flex;
-    justify-content: center; /* Menu tetap di tengah */
-    gap: 10px; /* Jarak antar menu */
-    background-color: #c4a47c; /* Sesuaikan dengan desain */
+nav {
+    background-color: maroon;
     padding: 10px;
-    flex-wrap: wrap; /* Agar rapi di HP */
 }
 
-/* Styling tombol menu */
-.navbar a {
-    text-decoration: none;
-    background-color: #d4af86; /* Warna latar menu */
-    padding: 10px 15px;
-    border-radius: 5px; /* Biar agak membulat */
-    color: #4a1f0f; /* Warna teks */
+.navbar-nav .nav-item {
+    margin: 5px; /* Jarak antar menu */
+}
+
+.navbar-nav .nav-link {
+    color: white !important;
     font-weight: bold;
+    padding: 10px 15px;
 }
 
-/* Efek hover */
-.navbar a:hover {
-    background-color: #a67c52;
-    color: white;
+.navbar-nav .nav-link:hover {
+    background-color: #FFD700; /* Warna hover (emas) */
+    color: maroon !important;
+    border-radius: 5px;
 }
 
-/* Agar menu tetap rapi di HP */
-@media screen and (max-width: 600px) {
-    .navbar {
-        flex-direction: column; /* Supaya vertikal di layar kecil */
-        align-items: center; /* Biar tetap di tengah */
-    }
-}
-
-    .navbar a {
-        width: 90%; /* Supaya menu rapi di HP */
-        text-align: center;
+/* Agar menu tetap rapi di mobile */
+@media (max-width: 768px) {
+    .navbar-nav {
+        flex-direction: column !important;
+        align-items: center !important;
     }
 }
