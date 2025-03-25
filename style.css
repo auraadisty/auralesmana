@@ -37,48 +37,6 @@ header {
     color: white;
 }
 
-/* Style dropdown */
-.dropdown {
-    position: relative;
-    display: inline-block;
-}
-
-.dropbtn {
-    background-color: #D2B48C; /* Warna sesuai tema */
-    color: maroon;
-    padding: 10px 20px;
-    font-weight: bold;
-    text-decoration: none;
-    border-radius: 5px;
-    display: block;
-}
-
-.dropdown-content {
-    display: none;
-    position: absolute;
-    background-color: #f8e6d1;
-    min-width: 150px;
-    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
-    z-index: 1;
-}
-
-.dropdown-content a {
-    color: maroon;
-    padding: 10px;
-    display: block;
-    text-decoration: none;
-}
-
-.dropdown-content a:hover {
-    background-color: #A52A2A;
-    color: white;
-}
-
-/* Tampilkan dropdown saat hover */
-.dropdown:hover .dropdown-content {
-    display: block;
-}
-
 h2 {
     color: #731210; 
     text-align: center;
@@ -316,19 +274,41 @@ footer {
     text-align: center;
     width: 100%;
 }
-nav ul {
-    width: 100%; /* Pastikan navbar penuh */
+/* NAVBAR STYLE */
+.navbar {
     display: flex;
-    justify-content: space-evenly; /* Rata tengah dengan jarak sama */
+    justify-content: center; /* Posisikan menu ke tengah */
+    flex-wrap: wrap; /* Supaya rapi di HP */
+    background-color: #8B0000; /* Warna merah tua */
+    padding: 10px;
 }
 
-nav ul li {
-    flex: 1; /* Setiap item menu memiliki lebar yang sama */
-    text-align: center;
+/* Style untuk setiap item menu */
+.navbar a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 15px;
+    margin: 5px;
+    border-radius: 5px;
+    background-color: #b88d65;
+    font-weight: bold;
+    transition: background 0.3s;
 }
 
-nav ul li a {
-    display: block;
-    width: 100%; /* Supaya seluruh area bisa diklik */
-    text-align: center;
+/* Efek hover */
+.navbar a:hover {
+    background-color: #e6be8a;
+}
+
+/* RESPONSIF UNTUK HP */
+@media screen and (max-width: 600px) {
+    .navbar {
+        flex-direction: column; /* Menu jadi vertikal */
+        align-items: center;
+    }
+
+    .navbar a {
+        width: 90%; /* Supaya menu rapi di HP */
+        text-align: center;
+    }
 }
