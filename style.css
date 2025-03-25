@@ -308,44 +308,6 @@ h2 {
     background-color: #a31e1e;
 }
 
-@media (max-width: 768px) {
-    .row {
-        flex-direction: column;
-        align-items: center;
-    }
-    .card {
-        width: 90%;
-    }
-}
-.navbar-nav {
-  text-align: center;
-}
-
-.navbar-toggler {
-  border-color: white;
-}
-
-.dropdown-menu {
-  right: 0;
-  left: auto;
-}
-.bg-maroon {
-    background-color: #731210 !important; /* Warna merah tua */
-}
-.navbar-brand {
-    font-size: 20px;
-    font-weight: bold;
-}
-.navbar-toggler {
-    border-color: white;
-}
-.nav-link {
-    color: white !important;
-}
-.nav-link:hover {
-    background-color: #A52A2A;
-    border-radius: 5px;
-}
 footer {
     background-color: #4e0d0b;
     color: #f8e6d1;
@@ -354,38 +316,19 @@ footer {
     text-align: center;
     width: 100%;
 }
-.navbar {
-  padding: 10px;
+nav ul {
+    width: 100%; /* Pastikan navbar penuh */
+    display: flex;
+    justify-content: space-evenly; /* Rata tengah dengan jarak sama */
 }
 
-.navbar-brand {
-  font-size: 20px;
-  font-weight: bold;
+nav ul li {
+    flex: 1; /* Setiap item menu memiliki lebar yang sama */
+    text-align: center;
 }
 
-.navbar-toggler {
-  border: none;
+nav ul li a {
+    display: block;
+    width: 100%; /* Supaya seluruh area bisa diklik */
+    text-align: center;
 }
-
-.offcanvas {
-  width: 250px; /* Lebar sidebar */
-}
-
-.offcanvas-body {
-  padding: 20px;
-}
-
-.navbar-nav .nav-item {
-  margin-bottom: 10px;
-}
-
-.navbar-nav .nav-link {
-  font-size: 16px;
-  color: white;
-  padding: 10px;
-}
-
-.navbar-nav .nav-link:hover {
-  background-color: rgba(255, 255, 255, 0.2);
-  border-radius: 5px;
-} 
