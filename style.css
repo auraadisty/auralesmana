@@ -274,52 +274,37 @@ footer {
     text-align: center;
     width: 100%;
 }
-/* Pastikan body tidak terlalu lebar */
-body {
-    width: 100%;
-    max-width: 100vw;
-    overflow-x: hidden;
-}
-
-/* Pastikan header dan menu tidak melebar */
-.header {
-    width: 100%;
-    text-align: center;
-    padding: 10px 0;
-}
-
-/* Navigasi lebih fleksibel */
+/* Navigasi */
 nav {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center; /* Tengah */
-    align-items: center;
-    padding: 10px;
-    gap: 5px;
-}
-
-/* Gaya tombol menu */
-nav a {
-    background: #e0c8a0;
-    padding: 10px 15px;
-    border-radius: 8px;
-    font-size: 14px;
+    background-color: maroon; /* Warna latar belakang */
+    padding: 10px 0;
     text-align: center;
-    text-decoration: none;
-    flex: 1; /* Agar semua tombol seimbang */
-    max-width: 120px; /* Cegah tombol melebar */
-    white-space: nowrap; /* Cegah teks turun ke bawah */
 }
 
-/* Menu responsif di layar kecil */
-@media screen and (max-width: 600px) {
-    nav {
-        flex-direction: column; /* Biar menu turun ke bawah */
-    }
+.navbar-nav {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    padding: 0;
+    gap: 15px; /* Jarak antar menu */
+}
 
-    nav a {
-        width: 80%; /* Sesuaikan ukuran menu */
-        max-width: none;
-        text-align: center;
-    }
+.navbar-nav .nav-item {
+    background-color: #d4af7a; /* Warna cream */
+    border-radius: 10px;
+    padding: 5px 15px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.navbar-nav .nav-link {
+    color: maroon !important;
+    font-weight: bold;
+    text-decoration: none;
+    display: block;
+    padding: 10px 20px;
+}
+
+/* Hover effect */
+.navbar-nav .nav-item:hover {
+    background-color: #c19a6b; /* Warna cream lebih gelap saat hover */
 }
