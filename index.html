@@ -59,12 +59,20 @@
     });
 </script>  
     <script>
-   document.addEventListener("DOMContentLoaded", function () {
-    const menuToggle = document.querySelector(".menu-toggle");
-    const navLinks = document.querySelector(".nav-links");
+ document.addEventListener("DOMContentLoaded", function () {
+    const dropdown = document.querySelector(".dropbtn");
+    const dropdownContent = document.querySelector(".dropdown-content");
 
-    menuToggle.addEventListener("click", function () {
-        navLinks.classList.toggle("show");
+    dropdown.addEventListener("click", function (event) {
+        event.preventDefault(); // Mencegah link default
+        dropdownContent.classList.toggle("show");
+    });
+
+    // Tutup dropdown saat klik di luar
+    window.addEventListener("click", function (event) {
+        if (!dropdown.contains(event.target)) {
+            dropdownContent.classList.remove("show");
+        }
     });
 });
 </script>
