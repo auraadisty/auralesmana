@@ -274,25 +274,26 @@ footer {
     text-align: center;
     width: 100%;
 }
-/* Navbar Styling */
+/* Navigasi */
 nav {
-    background-color: maroon;
-    padding: 10px;
+    background-color: maroon; /* Warna latar belakang */
+    padding: 10px 0;
     text-align: center;
 }
 
 .navbar-nav {
     display: flex;
     justify-content: center;
-    padding: 0;
     list-style: none;
-    gap: 10px; /* Jarak antar menu */
+    padding: 0;
+    gap: 15px; /* Jarak antar menu */
 }
 
 .navbar-nav .nav-item {
     background-color: #d4af7a; /* Warna cream */
-    border-radius: 10px; /* Biar membulat */
+    border-radius: 10px;
     padding: 5px 15px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
 }
 
 .navbar-nav .nav-link {
@@ -305,17 +306,5 @@ nav {
 
 /* Hover effect */
 .navbar-nav .nav-item:hover {
-    background-color: #b38e5d; /* Warna cream lebih gelap saat hover */
-}
-
-/* Responsif: Menyusun menu agar tetap rapi di HP */
-@media (max-width: 768px) {
-    .navbar-nav {
-        flex-wrap: wrap;
-    }
-
-    .navbar-nav .nav-item {
-        flex: 1 1 auto;
-        text-align: center;
-    }
+    background-color: #c19a6b; /* Warna cream lebih gelap saat hover */
 }
