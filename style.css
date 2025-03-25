@@ -274,42 +274,61 @@ footer {
     text-align: center;
     width: 100%;
 }
-/* Perbaiki tampilan menu navigasi */
+/* Perbaiki header agar tidak terlalu besar */
+.header {
+    font-size: 20px; /* Ukuran font lebih kecil */
+    padding: 10px;
+}
+
+/* Perbaiki navigasi agar terlihat lebih jelas */
 nav {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    background: #8B0000; /* Warna merah tua */
+    background: #8B0000; /* Warna merah gelap agar terlihat jelas */
     padding: 10px;
 }
 
-/* Atur tampilan tombol menu */
 nav a {
-    color: white; /* Warna teks putih agar kontras */
-    background: #B22222; /* Warna merah lebih terang */
-    padding: 10px 15px;
+    color: white; /* Warna teks putih supaya kontras */
+    background: #B22222; /* Warna merah tua */
+    padding: 8px 12px;
     border-radius: 5px;
-    font-size: 16px; /* Ukuran font lebih besar */
+    font-size: 14px;
     text-decoration: none;
     margin: 5px;
-    transition: 0.3s;
 }
 
-/* Efek hover untuk menu */
-nav a:hover {
-    background: #FF6347; /* Warna lebih cerah saat dihover */
+/* Perbaiki tabel agar lebih responsif */
+table {
+    width: 100%;
+    border-collapse: collapse;
 }
 
-/* Responsif: Jika layar kecil, menu berubah */
+th, td {
+    border: 1px solid black;
+    padding: 8px;
+    text-align: left;
+}
+
+/* Responsif: Jika layar kecil, atur tabel agar tidak terlalu besar */
 @media screen and (max-width: 600px) {
+    .header {
+        font-size: 16px;
+        padding: 5px;
+    }
+
     nav {
         flex-direction: column; /* Menu turun ke bawah */
         align-items: center;
     }
 
     nav a {
-        width: 90%; /* Lebar tombol agar lebih mudah ditekan */
+        width: 80%;
         text-align: center;
-        font-size: 18px;
+    }
+
+    table {
+        font-size: 14px; /* Tulisan lebih kecil agar tidak terlalu besar */
     }
 }
