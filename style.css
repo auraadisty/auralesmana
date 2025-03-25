@@ -274,38 +274,39 @@ footer {
     text-align: center;
     width: 100%;
 }
-/* NAVBAR STYLE */
+/* Mengatur navbar agar sejajar */
 .navbar {
     display: flex;
-    justify-content: center; /* Posisikan menu ke tengah */
-    flex-wrap: wrap; /* Supaya rapi di HP */
-    background-color: #8B0000; /* Warna merah tua */
+    justify-content: center; /* Menu tetap di tengah */
+    gap: 10px; /* Jarak antar menu */
+    background-color: #c4a47c; /* Sesuaikan dengan desain */
     padding: 10px;
+    flex-wrap: wrap; /* Agar rapi di HP */
 }
 
-/* Style untuk setiap item menu */
+/* Styling tombol menu */
 .navbar a {
-    color: white;
     text-decoration: none;
+    background-color: #d4af86; /* Warna latar menu */
     padding: 10px 15px;
-    margin: 5px;
-    border-radius: 5px;
-    background-color: #b88d65;
+    border-radius: 5px; /* Biar agak membulat */
+    color: #4a1f0f; /* Warna teks */
     font-weight: bold;
-    transition: background 0.3s;
 }
 
 /* Efek hover */
 .navbar a:hover {
-    background-color: #e6be8a;
+    background-color: #a67c52;
+    color: white;
 }
 
-/* RESPONSIF UNTUK HP */
+/* Agar menu tetap rapi di HP */
 @media screen and (max-width: 600px) {
     .navbar {
-        flex-direction: column; /* Menu jadi vertikal */
-        align-items: center;
+        flex-direction: column; /* Supaya vertikal di layar kecil */
+        align-items: center; /* Biar tetap di tengah */
     }
+}
 
     .navbar a {
         width: 90%; /* Supaya menu rapi di HP */
