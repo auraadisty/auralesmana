@@ -11,13 +11,13 @@
 <header>
     <h1>PERPUSTAKAAN AURA</h1>
  <nav>
-    <ul class="nav-links">
-        <li><a href="index.html">Beranda</a></li>
-        <li><a href="Tentang-saya.html">Tentang Saya</a></li>
-        <li><a href="Hubungi-kami.html">Hubungi Kami</a></li>
-        <li><a href="koleksi.html">Koleksi</a></li>
-    </ul>
-</nav>
+        <ul class="nav justify-content-center">
+            <li class="nav-item"><a class="nav-link text-white" href="index.html">Beranda</a></li>
+            <li class="nav-item"><a class="nav-link text-white" href="Tentang-saya.html">Tentang Saya</a></li>
+            <li class="nav-item"><a class="nav-link text-white" href="Hubungi-kami.html">Hubungi Kami</a></li>
+            <li class="nav-item"><a class="nav-link text-white" href="koleksi.html">Koleksi</a></li>
+        </ul>
+    </nav>
 </header>
     <div class="container">
         <section class="my-5">
@@ -69,23 +69,5 @@
         &copy; 2025 Perpustakaan Aura
     </footer>
  <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.3.3/js/bootstrap.bundle.min.js"></script>
-<script>
-document.addEventListener("DOMContentLoaded", function () {
-    const dropdown = document.querySelector(".dropbtn");
-    const dropdownContent = document.querySelector(".dropdown-content");
-
-    dropdown.addEventListener("click", function (event) {
-        event.preventDefault(); // Mencegah link default
-        dropdownContent.classList.toggle("show");
-    });
-
-    // Tutup dropdown saat klik di luar
-    window.addEventListener("click", function (event) {
-        if (!dropdown.contains(event.target)) {
-            dropdownContent.classList.remove("show");
-        }
-    });
-});
-</script>
 </body>
 </html>
