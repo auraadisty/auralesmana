@@ -304,3 +304,31 @@ nav a {
 nav a:hover {
     background: #a87c4f; /* Warna lebih gelap saat dihover */
 }
+/* Styling Header */
+header {
+    background-color: #4d0e0e; /* Merah tua */
+    color: #f5e0c3; /* Warna krem */
+    font-family: 'Georgia', serif;
+}
+
+/* Styling Navigasi */
+.navbar {
+    background-color: #8b0000; /* Merah gelap */
+    padding: 10px;
+}
+
+.btn-custom {
+    background-color: #d2a679; /* Warna krem kecoklatan */
+    color: #4d0e0e; /* Merah tua */
+    font-weight: bold;
+    padding: 10px 20px;
+    border-radius: 10px;
+    font-size: 18px;
+    text-decoration: none;
+}
+
+.btn-custom:hover {
+    background-color: #a87c4f; /* Warna lebih gelap saat hover */
+    color: white;
+}
+
