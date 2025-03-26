@@ -211,49 +211,34 @@ table td:hover {
     flex-wrap: wrap; /* Memastikan responsif jika layar lebih kecil */
     padding: 20px;
 }
-
-.row {
+.koleksi-container {
     display: flex;
-    flex-wrap: wrap;
     justify-content: center;
-    gap: 20px;
+    align-items: stretch; /* Memastikan tinggi kartu seragam */
+    gap: 30px; /* Menambah jarak antar elemen */
+    flex-wrap: wrap; /* Memastikan responsif jika layar lebih kecil */
+    padding: 20px;
 }
 
-.card {
-    background-color: white;
+.koleksi-item {
+    background: white;
     border-radius: 10px;
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
-    width: 300px;
+    padding: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     text-align: center;
-    overflow: hidden;
+    max-width: 250px;
+    margin: auto; /* Menyeimbangkan tata letak */
     transition: transform 0.3s ease;
 }
 
-.card:hover {
-    transform: scale(1.05);
+.koleksi-item:hover {
+    transform: scale(1.05); /* Animasi saat hover */
 }
 
-.card img {
-    width: 100%; 
-    height: auto; 
-    object-fit: cover; 
-    border-top-left-radius: 10px; 
-    border-top-right-radius: 10px; 
-}
-
-.card-body {
-    padding: 15px;
-}
-
-.card-title {
-    font-size: 18px;
-    color: #731210;
-    margin: 10px 0 5px;
-}
-
-.card-text {
-    font-size: 14px;
-    color: black;
+.koleksi-item img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
 }
 
 .btn-baca {
