@@ -274,36 +274,7 @@ footer {
     text-align: center;
     width: 100%;
 }
-/* Styling Header */
-header {
-    text-align: center;
-    background: #4d0e0e; /* Warna merah tua */
-    color: #f5e0c3; /* Warna krem */
-    padding: 20px;
-    font-family: 'Georgia', serif;
-}
 
-/* Styling Navigasi */
-nav {
-    background: #8b0000; /* Merah gelap */
-    padding: 10px;
-}
-
-nav a {
-    background: #d2a679; /* Warna krem kecoklatan */
-    color: #4d0e0e; /* Warna merah tua */
-    text-decoration: none;
-    padding: 10px 20px;
-    border-radius: 10px;
-    font-size: 18px;
-    margin: 5px;
-    display: inline-block;
-    font-weight: bold;
-}
-
-nav a:hover {
-    background: #a87c4f; /* Warna lebih gelap saat dihover */
-}
 /* Styling Header */
 header {
     background-color: #4d0e0e; /* Merah tua */
