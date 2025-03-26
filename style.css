@@ -213,21 +213,22 @@ table td:hover {
 }
 
 .koleksi-item {
-    background: white;
-    border-radius: 10px;
-    padding: 15px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    text-align: center;
-    flex: 1 1 250px; /* Responsif dengan minimal lebar 250px */
-    max-width: 300px; /* Agar tidak terlalu besar */
-    transition: transform 0.3s ease;
+    background: white !important;
+    border-radius: 10px !important;
+    padding: 15px !important;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2) !important;
+    text-align: center !important;
+    flex: 1 1 250px !important; /* Ukuran fleksibel */
+    max-width: 300px !important; 
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out !important;
+    cursor: pointer !important;
 }
 
 .koleksi-item:hover,
 .koleksi-item:focus {
-    transform: scale(1.05); /* Membesarkan elemen saat hover */
-    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3); /* Menambahkan efek bayangan */
-    background-color: #f8e6d1; /* Warna sedikit berubah saat hover */
+    transform: scale(1.05) !important;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3) !important;
+    background-color: #f8e6d1 !important;
 }
 
 .koleksi-item img {
