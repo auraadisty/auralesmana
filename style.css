@@ -224,7 +224,8 @@ table td:hover {
 }
 
 .koleksi-item:hover {
-    transform: scale(1.05); /* Animasi saat hover */
+    transform: scale(1.05); /* Membesarkan elemen saat hover */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3); /* Menambahkan efek bayangan */
 }
 
 .koleksi-item img {
