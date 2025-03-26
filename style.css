@@ -45,14 +45,18 @@ a:hover {
     text-decoration: underline;
 }
 
+/* Menambahkan container di sekitar navigasi */
 .navbar {
     background-color: #8b0000; /* Merah gelap */
     padding: 15px;
     display: flex;
     justify-content: center;
-    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 10px; /* Agar lebih rapi */
+    margin: 20px auto; /* Pusatkan */
+    width: 90%;
 }
 
+/* Styling untuk container menu */
 .nav-container {
     background-color: #f5e0c3; /* Warna krem */
     padding: 10px;
@@ -61,26 +65,27 @@ a:hover {
     gap: 20px;
     justify-content: center;
     align-items: center;
-    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); /* Menambahkan bayangan untuk efek 3D */
 }
 
+/* Styling untuk link navigasi */
 .nav-container a {
     background-color: #d2a679; /* Warna krem kecoklatan */
-    color: maroon; /* Merah maroon */
+    color: maroon; /* Warna tulisan maroon */
     font-weight: bold;
-    padding: 8px 16px;
+    padding: 10px 20px;
     border-radius: 10px;
     font-size: 18px;
     text-decoration: none;
     text-align: center;
     display: inline-block;
-    transition: background-color 0.3s, transform 0.2s;
+    transition: background-color 0.3s ease, color 0.3s ease;
 }
 
+/* Hover efek untuk navigasi */
 .nav-container a:hover {
     background-color: #a87c4f; /* Warna lebih gelap saat hover */
     color: white;
-    transform: scale(1.05);
 }
 
 form {
