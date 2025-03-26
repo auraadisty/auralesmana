@@ -203,10 +203,13 @@ table td:hover {
     left: 10px;
 }
 
-.halaman-koleksi .container {
-    background-color: #fce5cd; 
-    padding: 30px;
-    border-radius: 20px;
+.koleksi-container {
+    display: flex;
+    justify-content: center;
+    align-items: stretch; /* Memastikan tinggi kartu seragam */
+    gap: 30px; /* Menambah jarak antar elemen */
+    flex-wrap: wrap; /* Memastikan responsif jika layar lebih kecil */
+    padding: 20px;
 }
 
 .row {
