@@ -205,8 +205,8 @@ table td:hover {
 
 .halaman-koleksi .container {
     background-color: #fce5cd; 
-    padding: 20px;
-    border-radius: 10px;
+    padding: 30px;
+    border-radius: 20px;
 }
 
 .row {
@@ -266,28 +266,6 @@ table td:hover {
 
 .btn-baca:hover {
     background-color: #a31e1e;
-}
-.koleksi-container {
-    display: flex;
-    justify-content: center;
-    gap: 20px; /* Memberikan jarak antar elemen */
-    flex-wrap: wrap; /* Agar responsif jika layar lebih kecil */
-    padding: 20px;
-}
-
-.koleksi-item {
-    background: white;
-    border-radius: 10px;
-    padding: 15px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    text-align: center;
-    max-width: 250px;
-}
-
-.koleksi-item img {
-    max-width: 100%;
-    height: auto;
-    border-radius: 5px;
 }
 
 footer {
