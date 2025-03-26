@@ -61,8 +61,8 @@ a:hover {
 
 /* Styling untuk tombol navigasi */
 .nav-container a {
-    background-color: #f5e0c3; /* Warna krem */
-    color: maroon; /* Warna teks */
+    background-color: #731210; 
+    color: krem; /* Warna teks */
     font-weight: bold;
     padding: 10px 20px;
     border-radius: 8px; /* Membuat sudut agak melengkung */
