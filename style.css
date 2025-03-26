@@ -244,33 +244,33 @@ footer {
     width: 100%;
 }
 
-/* Styling Navigasi */
 .navbar {
-    background-color: #8b0000 !important;
+    background-color: #8b0000; /* Merah gelap */
     padding: 10px;
-}
-
-.navbar .navbar-nav {
     display: flex;
     justify-content: center;
-    width: 100%;
 }
 
-.navbar .nav-item {
-    margin: 0 10px;
+.navbar-container {
+    background-color: #f5e0c3; /* Warna krem */
+    padding: 10px;
+    border-radius: 15px;
+    display: inline-flex;
+    gap: 10px;
 }
 
-.navbar .btn-custom {
-    background-color: #d2a679;
-    color: #4d0e0e;
+.btn-custom {
+    background-color: #d2a679; /* Warna krem kecoklatan */
+    color: #4d0e0e; /* Merah tua */
     font-weight: bold;
     padding: 10px 20px;
     border-radius: 10px;
     font-size: 18px;
     text-decoration: none;
+    border: none;
 }
 
-.navbar .btn-custom:hover {
-    background-color: #a87c4f;
+.btn-custom:hover {
+    background-color: #a87c4f; /* Warna lebih gelap saat hover */
     color: white;
 }
