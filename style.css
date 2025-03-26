@@ -244,6 +244,7 @@ footer {
     width: 100%;
 }
 
+/* Styling Navigasi */
 .navbar {
     background-color: #8b0000; /* Merah gelap */
     padding: 10px;
@@ -251,15 +252,15 @@ footer {
     justify-content: center;
 }
 
-.navbar-container {
+.nav-container {
     background-color: #f5e0c3; /* Warna krem */
     padding: 10px;
     border-radius: 15px;
-    display: inline-flex;
-    gap: 10px;
+    display: flex;
+    gap: 15px;
 }
 
-.btn-custom {
+.nav-container a {
     background-color: #d2a679; /* Warna krem kecoklatan */
     color: #4d0e0e; /* Merah tua */
     font-weight: bold;
@@ -267,10 +268,10 @@ footer {
     border-radius: 10px;
     font-size: 18px;
     text-decoration: none;
-    border: none;
+    text-align: center;
 }
 
-.btn-custom:hover {
+.nav-container a:hover {
     background-color: #a87c4f; /* Warna lebih gelap saat hover */
     color: white;
 }
