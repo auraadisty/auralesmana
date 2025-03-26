@@ -210,8 +210,13 @@ table td:hover {
     gap: 20px;
     padding: 20px;
 }
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
 
-/* Gunakan class card */
 .card {
     width: 18rem;
     border-radius: 10px;
