@@ -45,46 +45,36 @@ a:hover {
     text-decoration: underline;
 }
 
-/* Menambahkan container di sekitar navigasi */
+/* Styling untuk navigasi */
 .navbar {
-    background-color: #8b0000; /* Merah gelap */
+    background-color: #8b0000; /* Warna merah gelap */
     padding: 15px;
-    display: flex;
-    justify-content: center;
-    border-radius: 10px; /* Agar lebih rapi */
-    margin: 20px auto; /* Pusatkan */
-    width: 90%;
+    text-align: center;
 }
 
-/* Styling untuk container menu */
+/* Container menu agar rata tengah */
 .nav-container {
-    background-color: #f5e0c3; /* Warna krem */
-    padding: 10px;
-    border-radius: 15px;
     display: flex;
-    gap: 20px;
     justify-content: center;
-    align-items: center;
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); /* Menambahkan bayangan untuk efek 3D */
+    gap: 15px;
 }
 
-/* Styling untuk link navigasi */
+/* Styling untuk tombol navigasi */
 .nav-container a {
-    background-color: #d2a679; /* Warna krem kecoklatan */
-    color: maroon; /* Warna tulisan maroon */
+    background-color: #f5e0c3; /* Warna krem */
+    color: maroon; /* Warna teks */
     font-weight: bold;
     padding: 10px 20px;
-    border-radius: 10px;
+    border-radius: 8px; /* Membuat sudut agak melengkung */
     font-size: 18px;
     text-decoration: none;
-    text-align: center;
-    display: inline-block;
+    border: 2px solid maroon;
     transition: background-color 0.3s ease, color 0.3s ease;
 }
 
-/* Hover efek untuk navigasi */
+/* Efek hover untuk tombol navigasi */
 .nav-container a:hover {
-    background-color: #a87c4f; /* Warna lebih gelap saat hover */
+    background-color: #e0c3a0; /* Warna krem lebih gelap saat hover */
     color: white;
 }
 
