@@ -223,9 +223,11 @@ table td:hover {
     transition: transform 0.3s ease;
 }
 
-.koleksi-item:hover {
+.koleksi-item:hover,
+.koleksi-item:focus {
     transform: scale(1.05); /* Membesarkan elemen saat hover */
     box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3); /* Menambahkan efek bayangan */
+    background-color: #f8e6d1; /* Warna sedikit berubah saat hover */
 }
 
 .koleksi-item img {
@@ -246,6 +248,10 @@ table td:hover {
         max-width: 100%;
     }
 }
+.koleksi-item:hover {
+        transform: scale(1.02);
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    }
 
 .btn-baca {
     display: inline-block;
