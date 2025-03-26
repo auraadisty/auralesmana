@@ -206,55 +206,46 @@ table td:hover {
 .koleksi-container {
     display: flex;
     justify-content: center;
-    align-items: stretch;
-    gap: 20px !important; /* Memastikan jarak antar elemen */
-    flex-wrap: wrap !important;
-    padding: 20px !important;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 20px;
 }
 
-.koleksi-item {
-    background: white !important;
-    border-radius: 10px !important;
-    padding: 15px !important;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2) !important;
-    text-align: center !important;
-    flex: 1 1 250px !important; /* Ukuran fleksibel */
-    max-width: 300px !important; 
-    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out !important;
-    cursor: pointer !important;
+/* Gunakan class card */
+.card {
+    width: 18rem;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
 }
 
-/* Efek hover dengan !important */
-.koleksi-item:hover,
-.koleksi-item:focus {
-    transform: scale(1.05) !important;
-    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3) !important;
-    background-color: #f8e6d1 !important;
+/* Efek hover */
+.card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
 }
 
 /* Pastikan gambar tidak terpengaruh */
-.koleksi-item img {
-    max-width: 100% !important;
-    height: auto !important;
-    border-radius: 5px !important;
+.card img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
 }
 
 /* Responsif untuk HP */
 @media (max-width: 600px) {
     .koleksi-container {
-        flex-direction: column !important;
-        align-items: center !important;
+        flex-direction: column;
+        align-items: center;
     }
 
-    .koleksi-item {
-        width: 90% !important;
-        max-width: 100% !important;
+    .card {
+        width: 90%;
     }
 
-    /* Efek hover tetap ada di HP */
-    .koleksi-item:hover {
-        transform: scale(1.02) !important;
-        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2) !important;
+    .card:hover {
+        transform: scale(1.02);
     }
 }
 
