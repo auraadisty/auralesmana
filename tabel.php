@@ -2,46 +2,57 @@
 <html lang="id">
 <head>
     <meta charset="UTF-8">
-    <title>Tabel Perkalian</title>
+    <title>Tabel Perkalian 10x10</title>
     <style>
         body {
-            background-color: #f5f5dc; /* krem */
+            background-color: #800000; /* Maroon */
             font-family: Arial, sans-serif;
             padding: 20px;
+            color: #fff8e1; /* Krem */
         }
         table {
-            width: 80%;
-            margin: auto;
             border-collapse: collapse;
-            background-color: #fff8e1; /* krem lebih terang */
-            box-shadow: 0 0 10px rgba(128, 0, 0, 0.5); /* maroon shadow */
+            margin: auto;
+            background-color: #fff8e1; /* Krem */
+            box-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
         }
         th, td {
-            border: 1px solid maroon;
-            padding: 10px;
+            border: 1px solid #800000;
+            padding: 10px 15px;
             text-align: center;
-            font-weight: bold;
-            color: maroon;
+            transition: background-color 0.3s, color 0.3s;
         }
         th {
-            background-color: maroon;
-            color: white;
+            background-color: #800000;
+            color: #fff8e1;
         }
-        h1 {
-            text-align: center;
-            color: maroon;
-            margin-bottom: 30px;
+        td:hover {
+            background-color: #800000;
+            color: #fff8e1;
+            cursor: pointer;
         }
     </style>
 </head>
 <body>
 
-    <h1>Tabel Perkalian 10 x 10</h1>
+<h2 style="text-align: center;">Tabel Perkalian 10 x 10</h2>
 
-    <table>
+<table>
+    <thead>
+        <tr>
+            <th></th>
+            <?php
+            for ($i = 1; $i <= 10; $i++) {
+                echo "<th>$i</th>";
+            }
+            ?>
+        </tr>
+    </thead>
+    <tbody>
         <?php
         for ($i = 1; $i <= 10; $i++) {
             echo "<tr>";
+            echo "<th>$i</th>"; // Kolom kepala kiri
             for ($j = 1; $j <= 10; $j++) {
                 $hasil = $i * $j;
                 echo "<td>$hasil</td>";
@@ -49,7 +60,8 @@
             echo "</tr>";
         }
         ?>
-    </table>
+    </tbody>
+</table>
 
 </body>
 </html>
