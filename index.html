@@ -67,24 +67,103 @@ nav ul li a:hover {
 </style>
 </head>
 <body>
-   <header class="header">
-  <div class="header-overlay">
-    <div class="logo-left">
-      <img src="https://cdn-icons-png.flaticon.com/512/29/29302.png" alt="Logo Buku">
-    </div>
-    <div class="center-title">PERPUSTAKAAN AURA</div>
-    <nav class="nav-menu">
-      <ul>
-        <li><a href="index.html">Beranda</a></li>
-        <li><a href="Tentang-saya.html">Tentang Saya</a></li>
-        <li><a href="Hubungi-kami.html">Hubungi Kami</a></li>
-        <li><a href="koleksi.html">Koleksi</a></li>
-        <li><a href="tabel.php">Tabel Perkalian</a></li>
-        <li><a href="Formulir_kunjungan.php">Formulir Kunjungan</a></li>
-      </ul>
-    </nav>
+ <!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Perpustakaan Aura</title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Roboto', sans-serif;
+      background-color: #fff;
+    }
+
+    .header {
+      background-color: #faebd7; /* krem */
+      color: #800000; /* merah tua */
+      padding: 15px 20px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      border-bottom: 2px solid #800000;
+    }
+
+    .logo-left {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .logo-left img {
+      height: 40px;
+    }
+
+    .center-title {
+      flex: 1;
+      text-align: center;
+      font-size: 22px;
+      font-weight: bold;
+      letter-spacing: 1px;
+      color: #800000;
+    }
+
+    nav {
+      background-color: #faebd7;
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      border-top: 1px solid #d3b8a0;
+    }
+
+    nav a {
+      color: #800000;
+      text-decoration: none;
+      padding: 12px 18px;
+      display: block;
+      transition: background 0.3s, color 0.3s;
+    }
+
+    nav a:hover {
+      background-color: #f2d9c4;
+      color: #000;
+    }
+
+    @media (max-width: 600px) {
+      nav {
+        flex-direction: column;
+        align-items: center;
+      }
+      .center-title {
+        font-size: 18px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+<header class="header">
+  <div class="logo-left">
+    <img src="https://cdn-icons-png.flaticon.com/512/29/29302.png" alt="Logo Buku">
   </div>
+  <div class="center-title">PERPUSTAKAAN AURA</div>
 </header>
+
+<nav>
+  <a href="index.html">Beranda</a>
+  <a href="tentang-saya.html">Tentang Saya</a>
+  <a href="hubungi.html">Hubungi Kami</a>
+  <a href="koleksi.html">Koleksi</a>
+  <a href="tabel.html">Tabel Perkalian</a>
+  <a href="form-kunjungan.html">Formulir Kunjungan</a>
+</nav>
+
+</body>
+</html>
+
 
     <div class="container">
         <section>
