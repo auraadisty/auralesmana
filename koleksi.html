@@ -71,7 +71,55 @@
         font-size: 18px;
       }
     }
-      
+
+/* Container untuk event */
+    .event-title {
+  color: #FFF5E1; /* krem */
+  font-weight: bold;
+}
+    
+.event-container {
+  display: flex;
+  gap: 20px;
+  overflow-x: auto;
+  padding: 20px 0;
+}
+
+.event-card {
+  min-width: 300px;
+  background-color: #FFF5E1; /* krem */
+  border: 1px solid #800000; /* maroon */
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(128, 0, 0, 0.2);
+  flex-shrink: 0;
+}
+
+.event-card h3 {
+  color: #800000;
+  margin-bottom: 10px;
+}
+
+.event-card p {
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.event-card a {
+  display: inline-block;
+  background-color: #800000; /* maroon */
+  color: #FFF5E1; /* krem */
+  padding: 10px 15px;
+  text-decoration: none;
+  border-radius: 5px;
+  margin-top: 10px;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.event-card a:hover {
+  background-color: #a52a2a; /* maroon yang sedikit lebih terang saat hover */
+  color: #ffffff;
+}
 </style>
 </head>
 <body>
@@ -81,6 +129,16 @@
   </div>
   <div class="center-title">PERPUSTAKAAN AURA</div>
 </header>
+
+<nav>
+  <a href="index.html">Beranda</a>
+  <a href="Tentang-saya.html">Tentang Saya</a>
+  <a href="Hubungi-kami.html">Hubungi Kami</a>
+  <a href="koleksi.html">Koleksi</a>
+  <a href="tabel_perkalian.html">Tabel Perkalian</a>
+  <a href="formulir-kunjungan.html">Formulir Kunjungan</a>
+</nav>
+
       <div class="container">
     <section class="my-5">
         <h2 class="text-center mb-4" style="color: #800000; font-weight: bold;">Koleksi Pribadi</h2>
