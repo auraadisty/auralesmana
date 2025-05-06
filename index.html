@@ -13,14 +13,26 @@
     }
 
     .header {
-      background-color: #faebd7; /* krem */
-      color: #800000; /* merah tua */
-      padding: 15px 20px;
+      background-image: url('https://images.unsplash.com/photo-1592194996308-7b43878e84a6'); /* gambar rak buku */
+      background-size: cover;
+      background-position: center;
+      color: #800000;
+      padding: 25px 20px;
       display: flex;
       align-items: center;
       justify-content: space-between;
       flex-wrap: wrap;
-      border-bottom: 2px solid #800000;
+      border-bottom: 3px solid #800000;
+    }
+
+    .header-overlay {
+      background-color: rgba(255, 235, 205, 0.9); /* overlay krem transparan */
+      width: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 10px 20px;
+      flex-wrap: wrap;
     }
 
     .logo-left {
@@ -38,59 +50,8 @@
       text-align: center;
       font-size: 22px;
       font-weight: bold;
-      letter-spacing: 1px;
-      color: #800000;
-    }
+      letter
 
-    nav {
-      background-color: #faebd7;
-      display: flex;
-      justify-content: center;
-      flex-wrap: wrap;
-      border-top: 1px solid #d3b8a0;
-    }
-
-    nav a {
-      color: #800000;
-      text-decoration: none;
-      padding: 12px 18px;
-      display: block;
-      transition: background 0.3s, color 0.3s;
-    }
-
-    nav a:hover {
-      background-color: #f2d9c4;
-      color: #000;
-    }
-
-    @media (max-width: 600px) {
-      nav {
-        flex-direction: column;
-        align-items: center;
-      }
-      .center-title {
-        font-size: 18px;
-      }
-    }
-  </style>
-</head>
-<body>
-
-<header class="header">
-  <div class="logo-left">
-    <img src="https://cdn-icons-png.flaticon.com/512/29/29302.png" alt="Logo Buku">
-  </div>
-  <div class="center-title">PERPUSTAKAAN AURA</div>
-</header>
-
-<nav>
-  <a href="index.html">Beranda</a>
-  <a href="tentang-saya.html">Tentang Saya</a>
-  <a href="hubungi.html">Hubungi Kami</a>
-  <a href="koleksi.html">Koleksi</a>
-  <a href="tabel.html">Tabel Perkalian</a>
-  <a href="form-kunjungan.html">Formulir Kunjungan</a>
-</nav>
 
     <div class="container">
         <section>
