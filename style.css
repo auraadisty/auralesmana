@@ -130,12 +130,12 @@ body {
 }
 
 header h1 {
-    color: #f8e6d1; 
+    color: #673AB7; 
     margin: 0;
 }
 
 h2 {
-    color: #731210; 
+    color: ##9966CC; 
     text-align: center;
 }
 
@@ -168,17 +168,17 @@ input, textarea {
     font-family: inherit;
     width: 100%; 
     padding: 10px;
-    border: 1px solid #731210; 
+    border: 2px solid #673AB7; 
     border-radius: 5px;
     font-size: 16px;
-    background-color: #f8e6d1; 
-    color: #731210; 
+    background-color: #e0f0ff; 
+    color: #9966CC; 
     display: block;
     margin: auto;
 }
 
 input:focus, textarea:focus {
-    border-color: #A52A2A; 
+    border-color: #673AB7; 
     outline: none;
     box-shadow: 0px 0px 5px rgba(165, 42, 42, 0.5);
 }
@@ -188,7 +188,7 @@ label {
 }
 
 button {
-    background-color: maroon; 
+    background-color: #9966CC;
     color: white; 
     padding: 10px 15px;
     border: none;
@@ -198,11 +198,11 @@ button {
 }
 
 button:hover {
-    background-color: #731210;
+    background-color: #673AB7;
 }
 
 h1, h2, h3, h4, h5, h6 {
-    color: #731210; 
+    color: #9966CC; 
 }
 
 p, label, li, span, input::placeholder, textarea::placeholder {
@@ -230,11 +230,11 @@ p {
 }
 
 .table {
-    background-color: #f8e7d1 !important;
+    background-color: #ECF3FB !important;
 }
 
 .table th {
-    background-color: #d4b499 !important;
+    background-color: #673AB7 !important;
 }
 
 .table td {
@@ -242,11 +242,11 @@ p {
 }
 
 .table tbody tr:hover {
-    background-color: #e6c7a6 !important;
+    background-color: #ECF3FB !important;
 }
 
 table th {
-    background-color: #d4b499;
+    background-color: #ECF3FB;
     color: black;
     padding: 14px;
     text-align: left;
@@ -254,7 +254,7 @@ table th {
 }
 
 table th:hover {
-    background-color: #b89575; 
+    background-color: #673AB7; 
     color: white;
 }
 
@@ -272,7 +272,7 @@ table td, table th {
 }
 
 table td:hover {
-    background-color: #e6c7a6; 
+    background-color: #673AB7; 
     color: black;
 }
 
