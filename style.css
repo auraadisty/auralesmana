@@ -110,7 +110,7 @@
 
 body {
     font-family: "Times New Roman", Times;
-    background-color: #FFFFF0; 
+    background-color: #ECF3FB; /* pale sky */
     color: white;
     text-align: center;
     margin: 30;
@@ -118,7 +118,7 @@ body {
 }
 
 .container {
-    background-color: #FFFFF0; 
+    background-color: #ECF3FB; /* pale sky */
     width: 80%;
     max-width: 800px;
     margin: 30px auto;
