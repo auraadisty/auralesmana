@@ -37,7 +37,7 @@
     }
 
     nav a {
-      color: #673ab7;
+      color: #ECF3FB;
       text-decoration: none;
       padding: 12px 18px;
       display: block;
@@ -329,7 +329,7 @@ table td:hover {
 
 .btn-baca {
     display: inline-block;
-    background-color: #731210;
+    background-color: #9966CC;
     color: white;
     padding: 8px 15px;
     text-decoration: none;
@@ -339,12 +339,12 @@ table td:hover {
 }
 
 .btn-baca:hover {
-    background-color: #a31e1e;
+    background-color: #673AB7;
 }
 
 footer {
-    background-color: #4e0d0b;
-    color: #f8e6d1;
+    background-color: #9966CC;
+    color: #ECF3FB;
     padding: 10px;
     margin-top: 20px;
     text-align: center;
