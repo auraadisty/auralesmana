@@ -1,12 +1,12 @@
 .header {
-      background-color: #003366; /* navy */
-      color: #E0E0E0; /* light grey */
+      background-color: #556B2F; /* oliv */
+      color: #FFFFF0; /* ivory */
       padding: 15px 20px;
       display: flex;
       align-items: center;
       justify-content: space-between;
       flex-wrap: wrap;
-      border-bottom: 2px solid #faebd7;
+      border-bottom: 2px solid #FFFFF0;
     }
 
     .logo-left {
@@ -25,19 +25,19 @@
       font-size: 22px;
       font-weight: bold;
       letter-spacing: 1px;
-      color: #faebd7;
+      color: #FFFFF0;
     }
 
     nav {
-      background-color: #003366; /* navy */
+      background-color: #556B2F; /* oliv */
       display: flex;
       justify-content: center;
       flex-wrap: wrap;
-      border-top: 1px solid #E0E0E0; /* light grey */
+      border-top: 1px solid #FFFFF0; /* ivory */
     }
 
     nav a {
-      color: #E0E0E0;
+      color: #ffffd7;
       text-decoration: none;
       padding: 12px 18px;
       display: block;
@@ -45,7 +45,7 @@
     }
 
     nav a:hover {
-      background-color: #008080; /* teal */
+      background-color: #A9A9A9; /* teal */
       color: #000;
     }
 
