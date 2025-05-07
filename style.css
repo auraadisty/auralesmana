@@ -1,3 +1,113 @@
+.header {
+      background-color: #003366; /* navy */
+      color: #E0E0E0; /* light grey */
+      padding: 15px 20px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      border-bottom: 2px solid #faebd7;
+    }
+
+    .logo-left {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .logo-left img {
+      height: 40px;
+    }
+
+    .center-title {
+      flex: 1;
+      text-align: center;
+      font-size: 22px;
+      font-weight: bold;
+      letter-spacing: 1px;
+      color: #faebd7;
+    }
+
+    nav {
+      background-color: #003366; /* navy */
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      border-top: 1px solid #E0E0E0; /* light grey */
+    }
+
+    nav a {
+      color: #E0E0E0;
+      text-decoration: none;
+      padding: 12px 18px;
+      display: block;
+      transition: background 0.3s, color 0.3s;
+    }
+
+    nav a:hover {
+      background-color: #008080; /* teal */
+      color: #000;
+    }
+
+    @media (max-width: 600px) {
+      nav {
+        flex-direction: column;
+        align-items: center;
+      }
+      .center-title {
+        font-size: 18px;
+      }
+    }
+
+/* Container untuk event */
+    .event-title {
+  color: #FFF5E1; /* krem */
+  font-weight: bold;
+}
+    
+.event-container {
+  display: flex;
+  gap: 20px;
+  overflow-x: auto;
+  padding: 20px 0;
+}
+
+.event-card {
+  min-width: 300px;
+  background-color: #FFF5E1; /* krem */
+  border: 1px solid #800000; /* maroon */
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(128, 0, 0, 0.2);
+  flex-shrink: 0;
+}
+
+.event-card h3 {
+  color: #800000;
+  margin-bottom: 10px;
+}
+
+.event-card p {
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.event-card a {
+  display: inline-block;
+  background-color: #800000; /* maroon */
+  color: #FFF5E1; /* krem */
+  padding: 10px 15px;
+  text-decoration: none;
+  border-radius: 5px;
+  margin-top: 10px;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.event-card a:hover {
+  background-color: #a52a2a; /* maroon yang sedikit lebih terang saat hover */
+  color: #ffffff;
+}
+
 body {
     font-family: "Times New Roman", Times;
     background-color: #E0E0E0; 
@@ -17,12 +127,6 @@ body {
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
     color: black; 
     text-align: justify;
-}
-
-header {
-    background-color: #4e0d0b; 
-    padding: 15px;
-    text-align: center;
 }
 
 header h1 {
@@ -45,37 +149,11 @@ a:hover {
     text-decoration: underline;
 }
 
-/* Styling untuk navigasi */
-.navbar {
-    background-color: #8b0000; /* Warna merah gelap */
-    padding: 15px;
-    text-align: center;
-}
-
 /* Container menu agar rata tengah */
 .nav-container {
     display: flex;
     justify-content: center;
     gap: 15px;
-}
-
-/* Styling untuk tombol navigasi */
-.nav-container a {
-    background-color: #f8e6d1; 
-    color: krem; /* Warna teks */
-    font-weight: bold;
-    padding: 10px 20px;
-    border-radius: 8px; /* Membuat sudut agak melengkung */
-    font-size: 18px;
-    text-decoration: none;
-    border: 2px solid maroon;
-    transition: background-color 0.3s ease, color 0.3s ease;
-}
-
-/* Efek hover untuk tombol navigasi */
-.nav-container a:hover {
-    background-color: #e0c3a0; /* Warna krem lebih gelap saat hover */
-    color: white;
 }
 
 form {
