@@ -1,6 +1,6 @@
 body {
     font-family: "Times New Roman", Times;
-    background-color: #800000; 
+    background-color: #E0E0E0; 
     color: white;
     text-align: center;
     margin: 30;
@@ -8,7 +8,7 @@ body {
 }
 
 .container {
-    background-color: #FFF5E1; 
+    background-color: #F5F5F5; 
     width: 80%;
     max-width: 800px;
     margin: 30px auto;
