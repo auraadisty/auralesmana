@@ -110,7 +110,7 @@
 
 body {
     font-family: "Times New Roman", Times;
-    background-color: #E0E0E0; 
+    background-color: #FFFFF0; 
     color: white;
     text-align: center;
     margin: 30;
@@ -118,7 +118,7 @@ body {
 }
 
 .container {
-    background-color: #F5F5F5; 
+    background-color: #ffffd7; 
     width: 80%;
     max-width: 800px;
     margin: 30px auto;
