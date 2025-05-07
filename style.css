@@ -37,7 +37,7 @@
     }
 
     nav a {
-      color: #ECF3FB;
+      color: #673ab7;
       text-decoration: none;
       padding: 12px 18px;
       display: block;
@@ -45,7 +45,7 @@
     }
 
     nav a:hover {
-      background-color: #673ab7
+      background-color: #673AB7;
       color: #000;
     }
 
@@ -95,7 +95,7 @@
 .event-card a {
   display: inline-block;
   background-color: #9966CC; /* amethys */
-  color: #E6E6FA
+  color: #E6E6FA;
   padding: 10px 15px;
   text-decoration: none;
   border-radius: 5px;
@@ -104,13 +104,13 @@
 }
 
 .event-card a:hover {
-  background-color: #673ab7
+  background-color: #673ab7;
   color: #ffffff;
 }
 
 body {
     font-family: "Times New Roman", Times;
-    background-color: #F5F5F5
+    background-color: #F5F5F5;
     color: white;
     text-align: center;
     margin: 30;
@@ -118,7 +118,7 @@ body {
 }
 
 .container {
-    background-color: #F5F5F5
+    background-color: #F5F5F5;
     width: 80%;
     max-width: 800px;
     margin: 30px auto;
