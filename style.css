@@ -45,7 +45,7 @@
     }
 
     nav a:hover {
-      background-color: #A9A9A9; /* teal */
+      background-color: #e6e6fa
       color: #000;
     }
 
@@ -61,7 +61,7 @@
 
 /* Container untuk event */
     .event-title {
-  color: #FFF5E1; /* krem */
+  color: #9966CC; /* amethys */
   font-weight: bold;
 }
     
@@ -74,8 +74,8 @@
 
 .event-card {
   min-width: 300px;
-  background-color: #FFF5E1; /* krem */
-  border: 1px solid #800000; /* maroon */
+  background-color: #E6E6FA
+  border: 1px solid #9966CC; /* amethys */
   border-radius: 10px;
   padding: 20px;
   box-shadow: 0 4px 8px rgba(128, 0, 0, 0.2);
@@ -83,7 +83,7 @@
 }
 
 .event-card h3 {
-  color: #800000;
+  color: #9966CC; /* amethys */
   margin-bottom: 10px;
 }
 
@@ -94,8 +94,8 @@
 
 .event-card a {
   display: inline-block;
-  background-color: #800000; /* maroon */
-  color: #FFF5E1; /* krem */
+  background-color: #9966CC; /* amethys */
+  color: #E6E6FA
   padding: 10px 15px;
   text-decoration: none;
   border-radius: 5px;
@@ -104,7 +104,7 @@
 }
 
 .event-card a:hover {
-  background-color: #a52a2a; /* maroon yang sedikit lebih terang saat hover */
+  background-color: #e6e6fa
   color: #ffffff;
 }
 
