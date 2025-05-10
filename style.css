@@ -45,7 +45,7 @@
     }
 
     nav a:hover {
-      background-color: #f1eaf8;
+      background-color: #d4bee9;
       color: #000;
     }
 
@@ -236,38 +236,27 @@ table {
     font-size: 16px;
 }
 
-/* Gaya Header Tabel */
-table th {
-    background-color: #9966CC;
-    color: black;
-    padding: 14px;
-    text-align: left;
-    border: 2px solid black;
-    transition: background-color 0.3s ease, color 0.3s ease;
-}
-
-table th:hover {
-    background-color: #673AB7;
-    color: white;
-}
-
-/* Gaya Sel Data */
-table td {
-    background-color: #d4bee9;
-    border: 2px solid black;
-    padding: 14px;
-    transition: background-color 0.3s ease, color 0.3s ease;
-}
-
 table td:hover {
-    background-color: #673AB7;
+    background-color: #9966CC; 
     color: black;
 }
 
-/* Efek Hover pada Baris */
-table tbody tr:hover {
-    background-color: #d4bee9;
+.table {
+    background-color: #d4bee9 !important;
 }
+
+.table th {
+    background-color: #9966CC !important;
+}
+
+.table td {
+    border: 2px solid black !important;
+}
+
+.table tbody tr:hover {
+    background-color: #d4bee9 !important;
+}
+
 
 .logo-gif {
     width: 70px; 
