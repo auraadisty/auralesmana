@@ -9,6 +9,36 @@
       border-bottom: 2px solid #ECF3FB;
     }
 
+.loader-container {
+  max-width: 600px;
+  margin: auto;
+}
+
+.loader-bar {
+  width: 0;
+  height: 10px;
+  background-color: white;
+  margin: 30px auto;
+  animation: loadBar 5s linear forwards;
+  border-radius: 5px;
+}
+
+@keyframes loadBar {
+  from { width: 0; }
+  to { width: 80%; }
+}
+
+.quote {
+  margin-top: 20px;
+  font-style: italic;
+  font-size: 18px;
+  animation: fadeIn 3s ease-in-out;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
     .logo-left {
       display: flex;
       align-items: center;
