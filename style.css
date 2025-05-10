@@ -6,7 +6,7 @@
       align-items: center;
       justify-content: space-between;
       flex-wrap: wrap;
-      border-bottom: 2px solid #673ab7;
+      border-bottom: 2px solid #ECF3FB;
     }
 
     .logo-left {
@@ -45,7 +45,7 @@
     }
 
     nav a:hover {
-      background-color: #d4bee9;
+      background-color: #f1eaf8;
       color: #000;
     }
 
@@ -227,22 +227,6 @@ p {
 
 .container form {
     display: block;
-}
-
-.table {
-    background-color: #d4bee9 !important;
-}
-
-.table th {
-    background-color: #9966CC !important;
-}
-
-.table td {
-    border: 2px solid black !important;
-}
-
-.table tbody tr:hover {
-    background-color: #d4bee9 !important;
 }
 
 table th {
