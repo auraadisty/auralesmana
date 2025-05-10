@@ -59,6 +59,20 @@
       }
     }
 
+/* Tambahan untuk burger menu (tombol navbar-toggle) */
+@media (max-width: 600px) {
+  .navbar-toggler {
+    position: absolute;
+    left: 10px;
+    top: 20px;
+    z-index: 1051; /* agar di atas elemen lain */
+  }
+
+  .navbar-collapse {
+    width: 100%;
+  }
+}
+
   .event-card {
     background-color: #f8f9fa;
     border-radius: 16px;
