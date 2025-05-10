@@ -6,7 +6,7 @@
       align-items: center;
       justify-content: space-between;
       flex-wrap: wrap;
-      border-bottom: 2px solid #ECF3FB;
+      border-bottom: 2px solid #673ab7;
     }
 
     .logo-left {
@@ -33,7 +33,7 @@
       display: flex;
       justify-content: center;
       flex-wrap: wrap;
-      border-top: 1px solid #ECF3FB; /* pale sky */
+      border-top: 1px solid #673ab7; /* pale sky */
     }
 
     nav a {
@@ -45,7 +45,7 @@
     }
 
     nav a:hover {
-      background-color: #673AB7;
+      background-color: #d4bee9;
       color: #000;
     }
 
@@ -171,14 +171,14 @@ input, textarea {
     border: 2px solid #673AB7; 
     border-radius: 5px;
     font-size: 16px;
-    background-color: #e0f0ff; 
+    background-color: #d4bee9; 
     color: #9966CC; 
     display: block;
     margin: auto;
 }
 
 input:focus, textarea:focus {
-    border-color: #673AB7; 
+    border-color: #9966CC; 
     outline: none;
     box-shadow: 0px 0px 5px rgba(165, 42, 42, 0.5);
 }
@@ -230,7 +230,7 @@ p {
 }
 
 .table {
-    background-color: #ECF3FB !important;
+    background-color: #d4bee9 !important;
 }
 
 .table th {
@@ -242,7 +242,7 @@ p {
 }
 
 .table tbody tr:hover {
-    background-color: #ECF3FB !important;
+    background-color: #d4bee9 !important;
 }
 
 table th {
