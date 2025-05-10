@@ -21,29 +21,6 @@
   flex-direction: column;
 }
 
-.welcome-container h1 {
-  font-size: 42px;
-  margin-bottom: 10px;
-}
-
-.quote {
-  font-style: italic;
-  font-size: 20px;
-  margin-bottom: 30px;
-}
-
-.loader-bar {
-  width: 0;
-  height: 6px;
-  background-color: white;
-  border-radius: 5px;
-  animation: loadBar 4s ease-in-out forwards;
-}
-
-@keyframes loadBar {
-  from { width: 0; }
-  to { width: 60%; }
-}
     .logo-left {
       display: flex;
       align-items: center;
