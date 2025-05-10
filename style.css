@@ -140,7 +140,7 @@ h2 {
 }
 
 a {
-    color: #731210;
+    color: #9966CC;
     text-decoration: none;
     font-weight: bold;
 }
@@ -218,7 +218,7 @@ p {
 }
 
 .container a:hover {
-    color: #731210; 
+    color: #9966CC; 
 }
 
 .container {
@@ -234,7 +234,7 @@ p {
 }
 
 .table th {
-    background-color: #673AB7 !important;
+    background-color: #9966CC !important;
 }
 
 .table td {
@@ -246,7 +246,7 @@ p {
 }
 
 table th {
-    background-color: #ECF3FB;
+    background-color: #9966CC;
     color: black;
     padding: 14px;
     text-align: left;
