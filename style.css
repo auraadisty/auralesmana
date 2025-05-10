@@ -9,16 +9,29 @@
       border-bottom: 2px solid #ECF3FB;
     }
 
-.welcome-page {
-  background-color: #9966CC;
-  color: white;
-  font-family: 'Segoe UI', sans-serif;
+.quote-section {
+  background-image: url('gambar-perpus.jpg'); /* ganti dengan nama file gambar kamu */
+  background-size: cover;
+  background-position: center;
+  height: 120px;
   display: flex;
   align-items: center;
   justify-content: center;
-  height: 100vh;
-  text-align: center;
-  flex-direction: column;
+  position: relative;
+  margin-bottom: 20px;
+}
+
+.quote-overlay {
+  background-color: rgba(0, 0, 0, 0.5); /* lapisan gelap semi transparan */
+  width: 100%;
+  padding: 10px 20px;
+  color: white;
+  font-size: 20px;
+  font-style: italic;
+  font-weight: 500;
+  text-shadow: 1px 1px 2px black;
+  border-top: 2px solid #9966CC;
+  border-bottom: 2px solid #9966CC;
 }
 
     .logo-left {
