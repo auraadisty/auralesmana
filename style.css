@@ -9,7 +9,49 @@
       border-bottom: 2px solid #ECF3FB;
     }
 
-    .logo-left {
+  .center-title {
+      flex: 1;
+      text-align: center;
+      font-size: 24px;
+      font-weight: bold;
+      letter-spacing: 1px;
+      color: #ECF3FB;
+    }
+
+
+/* Styling untuk navbar */
+.navbar {
+  background-color: #9966CC;  /* Sama dengan header */
+  padding: 10px 20px;
+}
+
+.navbar-nav {
+  font-size: 16px;
+}
+
+.navbar-nav .nav-item {
+  margin-right: 20px;
+}
+
+/* Styling navbar untuk tampilan mobile */
+@media (max-width: 991px) {
+  .navbar-nav {
+    background-color: #f8f9fa;
+  }
+  
+  .navbar-nav .nav-item {
+    margin-bottom: 10px;
+  }
+
+  /* Menempatkan burger menu di kiri atau kanan */
+  .navbar-toggler {
+    position: absolute;
+    right: 20px;  /* Menempatkan burger di kanan */
+    top: 20px;
+  }
+}
+
+ .logo-left {
       display: flex;
       align-items: center;
       gap: 10px;
@@ -17,46 +59,6 @@
 
     .logo-left img {
       height: 40px;
-    }
-
-    .center-title {
-      flex: 1;
-      text-align: center;
-      font-size: 22px;
-      font-weight: bold;
-      letter-spacing: 1px;
-      color: #ECF3FB;
-    }
-
-    nav {
-      background-color: #9966CC; /* amethys */
-      display: flex;
-      justify-content: center;
-      flex-wrap: wrap;
-      border-top: 1px solid #673ab7; /* pale sky */
-    }
-
-    nav a {
-      color: #ECF3FB;
-      text-decoration: none;
-      padding: 12px 18px;
-      display: block;
-      transition: background 0.3s, color 0.3s;
-    }
-
-    nav a:hover {
-      background-color: #d4bee9;
-      color: #000;
-    }
-
-    @media (max-width: 600px) {
-      nav {
-        flex-direction: column;
-        align-items: center;
-      }
-      .center-title {
-        font-size: 18px;
-      }
     }
 
   .event-card {
