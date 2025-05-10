@@ -112,7 +112,18 @@
     <footer>
         &copy; 2025 Perpustakaan Aura
     </footer>
+<script>
+        let currentIndex = 0;
 
+        function nextSlide() {
+            const items = document.querySelectorAll('.carousel-item');
+            currentIndex = (currentIndex + 1) % items.length;
+            const newTransformValue = -currentIndex * 100;
+            document.querySelector('.carousel').style.transform = `translateX(${newTransformValue}%)`;
+        }
+
+        setInterval(nextSlide, 3000); // Bergeser setiap 3 detik
+    </script>
     <!-- Default Statcounter code for Perpustakaan Aura -->
     <script type="text/javascript">
     var sc_project=13116289; 
