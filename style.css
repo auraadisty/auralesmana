@@ -9,35 +9,40 @@
       border-bottom: 2px solid #ECF3FB;
     }
 
-.loader-container {
-  max-width: 600px;
-  margin: auto;
+.welcome-page {
+  background-color: #9966CC;
+  color: white;
+  font-family: 'Segoe UI', sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  text-align: center;
+  flex-direction: column;
+}
+
+.welcome-container h1 {
+  font-size: 42px;
+  margin-bottom: 10px;
+}
+
+.quote {
+  font-style: italic;
+  font-size: 20px;
+  margin-bottom: 30px;
 }
 
 .loader-bar {
   width: 0;
-  height: 10px;
+  height: 6px;
   background-color: white;
-  margin: 30px auto;
-  animation: loadBar 5s linear forwards;
   border-radius: 5px;
+  animation: loadBar 4s ease-in-out forwards;
 }
 
 @keyframes loadBar {
   from { width: 0; }
-  to { width: 80%; }
-}
-
-.quote {
-  margin-top: 20px;
-  font-style: italic;
-  font-size: 18px;
-  animation: fadeIn 3s ease-in-out;
-}
-
-@keyframes fadeIn {
-  from { opacity: 0; transform: translateY(20px); }
-  to { opacity: 1; transform: translateY(0); }
+  to { width: 60%; }
 }
     .logo-left {
       display: flex;
