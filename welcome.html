@@ -1,17 +1,95 @@
 <!DOCTYPE html>
 <html lang="id">
 <head>
-  <meta charset="UTF-8">
-  <meta http-equiv="refresh" content="4;url=index.html">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Perpustakaan Aura</title>
-  <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Selamat Datang</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      background-color: #f9f9fb;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+
+    .container {
+      text-align: center;
+      background-color: #fff;
+      border: 3px solid #9966CC;
+      padding: 40px;
+      border-radius: 12px;
+      box-shadow: 0 0 20px rgba(153, 102, 204, 0.3);
+      animation: fadeIn 1.5s ease-in;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: scale(0.95); }
+      to { opacity: 1; transform: scale(1); }
+    }
+
+    .logo {
+      font-size: 60px;
+      color: #9966CC;
+      animation: bounce 1.5s infinite;
+    }
+
+    @keyframes bounce {
+      0%, 100% { transform: translateY(0); }
+      50% { transform: translateY(-10px); }
+    }
+
+    h1 {
+      font-size: 2em;
+      color: #9966CC;
+      margin: 20px 0 10px;
+    }
+
+    .loading-bar {
+      width: 80%;
+      height: 10px;
+      background-color: #eee;
+      border-radius: 5px;
+      margin: 20px auto;
+      overflow: hidden;
+    }
+
+    .loading-fill {
+      height: 100%;
+      width: 0%;
+      background-color: #9966CC;
+      animation: fill 5s linear forwards;
+    }
+
+    @keyframes fill {
+      from { width: 0%; }
+      to { width: 100%; }
+    }
+
+    .quote {
+      margin-top: 20px;
+      font-style: italic;
+      color: #555;
+    }
+  </style>
+  <script>
+    // Redirect otomatis ke beranda.html
+    setTimeout(() => {
+      window.location.href = "index.html";
+    }, 5000); // 5 detik
+  </script>
 </head>
-<body class="welcome-page">
-  <div class="welcome-container">
-    <h1>Perpustakaan Aura</h1>
+<body>
+  <div class="container">
+    <div class="logo">📚</div>
+    <h1>Selamat Datang di Perpustakaan Aura</h1>
+    <div class="loading-bar">
+      <div class="loading-fill"></div>
+    </div>
     <p class="quote">"Membaca adalah jendela dunia."</p>
-    <div class="loader-bar"></div>
   </div>
 </body>
 </html>
