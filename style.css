@@ -171,7 +171,7 @@ input, textarea {
     border: 2px solid #673AB7; 
     border-radius: 5px;
     font-size: 16px;
-    background-color: #d4bee9; 
+    background-color: #ede4f6; 
     color: #9966CC; 
     display: block;
     margin: auto;
@@ -248,20 +248,20 @@ table th {
 }
 
 table th:hover {
-    background-color: #673AB7 !important;
+    background-color: #673AB7 
     color: white;
 }
 
 /* Gaya Sel Data */
 table td {
-    background-color: #d4bee9 !important;
+    background-color: #ede4f6 !important;
     border: 2px solid black;
     padding: 14px;
     transition: background-color 0.3s ease, color 0.3s ease;
 }
 
 table td:hover {
-    background-color: #9966CC;
+     background-color: #9966CC !important;
     color: black;
 }
 
