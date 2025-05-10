@@ -9,7 +9,17 @@
       border-bottom: 2px solid #ECF3FB;
     }
 
-.center-title {
+    .logo-left {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .logo-left img {
+      height: 40px;
+    }
+
+    .center-title {
       flex: 1;
       text-align: center;
       font-size: 22px;
@@ -47,16 +57,6 @@
       .center-title {
         font-size: 18px;
       }
-    }
-
- .logo-left {
-      display: flex;
-      align-items: center;
-      gap: 10px;
-    }
-
-    .logo-left img {
-      height: 40px;
     }
 
   .event-card {
