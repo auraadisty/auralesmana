@@ -239,7 +239,7 @@ table {
 
 /* Gaya Header Tabel */
 table th {
-    background-color: #9966CC;
+    background-color: #9966CC !important;
     color: black;
     padding: 14px;
     text-align: left;
@@ -248,20 +248,20 @@ table th {
 }
 
 table th:hover {
-    background-color: #673AB7;
+    background-color: #673AB7 !important;
     color: white;
 }
 
 /* Gaya Sel Data */
 table td {
-    background-color: #d4bee9;
+    background-color: #d4bee9 !important;
     border: 2px solid black;
     padding: 14px;
     transition: background-color 0.3s ease, color 0.3s ease;
 }
 
 table td:hover {
-    background-color: #673AB7;
+    background-color: #9966CC;
     color: black;
 }
 
