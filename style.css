@@ -95,14 +95,14 @@
   }
 
   .custom-btn {
-    background-color: #ede4f6;
+    background-color: #9966CC;
     color: #000;
     border: none;
     transition: background-color 0.3s ease;
   }
 
   .custom-btn:hover {
-    background-color: #9966CC;
+    background-color: #ede4f6;
     color: #fff;
   }
 
