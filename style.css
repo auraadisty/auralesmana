@@ -229,30 +229,45 @@ p {
     display: block;
 }
 
-.table {
-    background-color: #ede4f6 !important;
+/* Gaya Umum Tabel */
+table {
+    width: 80%;
+    margin: 20px auto;
+    border-collapse: collapse;
+    font-size: 16px;
 }
 
-.table th {
-    background-color: #9966CC !important;
-}
-
-.table td {
-    border: 2px solid black !important;
-}
-
-.table tbody tr:hover {
-    background-color: #d4bee9 !important;
+/* Gaya Header Tabel */
+table th {
+    background-color: #9966CC;
+    color: black;
+    padding: 14px;
+    text-align: left;
+    border: 2px solid black;
+    transition: background-color 0.3s ease, color 0.3s ease;
 }
 
 table th:hover {
-    background-color: #673AB7; 
+    background-color: #673AB7;
     color: white;
 }
 
+/* Gaya Sel Data */
+table td {
+    background-color: #d4bee9;
+    border: 2px solid black;
+    padding: 14px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
 table td:hover {
-    background-color: #9966CC; 
+    background-color: #673AB7;
     color: black;
+}
+
+/* Efek Hover pada Baris */
+table tbody tr:hover {
+    background-color: #d4bee9;
 }
 
 .logo-gif {
