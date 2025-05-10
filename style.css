@@ -68,6 +68,11 @@
   color: inherit;
 }
 
+.event-card-link:hover {
+  text-decoration: none;
+  color: inherit;
+}
+
 .event-card {
   border-radius: 12px;
   overflow: hidden;
@@ -104,14 +109,14 @@
 }
 
 .event-info .btn {
-  background-color: #ede4f6;
+  background-color: #9966CC;
   color: #333;
   border: none;
   transition: background-color 0.3s ease;
 }
 
 .event-info .btn:hover {
-  background-color: #9966CC;
+  background-color: #ede4f6;
   color: #fff;
 }
 
