@@ -229,18 +229,6 @@ p {
     display: block;
 }
 
-table {
-    width: 80%;
-    margin: 20px auto;
-    border-collapse: collapse;
-    font-size: 16px;
-}
-
-table td:hover {
-    background-color: #9966CC; 
-    color: black;
-}
-
 .table {
     background-color: #d4bee9 !important;
 }
@@ -257,6 +245,36 @@ table td:hover {
     background-color: #d4bee9 !important;
 }
 
+table th {
+    background-color: #9966CC;
+    color: black;
+    padding: 14px;
+    text-align: left;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+table th:hover {
+    background-color: #673AB7; 
+    color: white;
+}
+
+table {
+    width: 80%;
+    margin: 20px auto; 
+    border-collapse: collapse; 
+}
+
+table td, table th {
+    border: 2px solid black;
+    padding: 14px;
+    font-size: 16px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+table td:hover {
+    background-color: #673AB7; 
+    color: black;
+}
 
 .logo-gif {
     width: 70px; 
