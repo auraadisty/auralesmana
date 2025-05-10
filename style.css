@@ -9,29 +9,38 @@
       border-bottom: 2px solid #ECF3FB;
     }
 
-.quote-section {
-  background-image: url('gambar/perpustakaan 1.webp'); /* ganti dengan nama file gambar kamu */
-  background-size: cover;
-  background-position: center;
-  height: 120px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  position: relative;
-  margin-bottom: 20px;
+.carousel-container {
+    width: 100%;
+    overflow: hidden;
+    position: relative;
 }
 
-.quote-overlay {
-  background-color: rgba(0, 0, 0, 0.5); /* lapisan gelap semi transparan */
-  width: 100%;
-  padding: 10px 20px;
-  color: white;
-  font-size: 20px;
-  font-style: italic;
-  font-weight: 500;
-  text-shadow: 1px 1px 2px black;
-  border-top: 2px solid #9966CC;
-  border-bottom: 2px solid #9966CC;
+.carousel {
+    display: flex;
+    transition: transform 0.5s ease;
+}
+
+.carousel-item {
+    min-width: 100%;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+.carousel-item img {
+    width: 100%;
+    height: auto;
+}
+
+.carousel-item .quote {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 20px;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 10px;
+    border-radius: 5px;
 }
 
     .logo-left {
