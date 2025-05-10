@@ -59,54 +59,25 @@
       }
     }
 
-/* Container untuk event */
-    .event-title {
-  color: #9966CC; /* amethys */
-  font-weight: bold;
-}
-    
-.event-container {
-  display: flex;
-  gap: 20px;
-  overflow-x: auto;
-  padding: 20px 0;
-}
+  .event-card-hover {
+    transition: transform 0.3s, box-shadow 0.3s;
+    overflow: hidden;
+    border-radius: 10px;
+  }
 
-.event-card {
-  min-width: 300px;
-  background-color: #E6E6FA
-  border: 1px solid #9966CC; /* amethys */
-  border-radius: 10px;
-  padding: 20px;
-  box-shadow: 0 4px 8px rgba(128, 0, 0, 0.2);
-  flex-shrink: 0;
-}
+  .event-card-hover:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+  }
 
-.event-card h3 {
-  color: #9966CC; /* amethys */
-  margin-bottom: 10px;
-}
+  .object-fit-cover {
+    object-fit: cover;
+  }
 
-.event-card p {
-  color: #333;
-  margin-bottom: 10px;
-}
-
-.event-card a {
-  display: inline-block;
-  background-color: #9966CC; /* amethys */
-  color: #E6E6FA;
-  padding: 10px 15px;
-  text-decoration: none;
-  border-radius: 5px;
-  margin-top: 10px;
-  transition: background-color 0.3s, color 0.3s;
-}
-
-.event-card a:hover {
-  background-color: #673ab7;
-  color: #ffffff;
-}
+  .event-card-hover .col-md-4 img {
+    height: 100%;
+    object-fit: cover;
+  }
 
 body {
     font-family: "Times New Roman", Times;
