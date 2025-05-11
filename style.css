@@ -566,3 +566,7 @@ footer {
     box-shadow: none;
   }
 }
+
+  .dropdown-menu.show {
+    display: block;
+  }
