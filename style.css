@@ -423,15 +423,6 @@ table tbody tr:hover {
   .burger {
     display: block;
   }
-
-  .center-title {
-    font-size: 18px;
-  }
-
-  .logo-left img {
-    height: 30px;
-  }
-}
    
   .menu-links {
     display: none;
