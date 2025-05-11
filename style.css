@@ -47,8 +47,7 @@
     nav a:hover {
       background-color: #d4bee9;
       color: #000;
-      box-sizing: border-box;
-    }
+      width: 100%;
 
     @media (max-width: 600px) {
       nav {
