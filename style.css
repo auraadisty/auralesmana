@@ -557,8 +557,10 @@ footer {
 
 /* Tampilkan dropdown saat hover di desktop */
 @media (min-width: 601px) {
- .dropdown:hover .dropdown-menu {
-    max-height: 300px; 
+  .dropdown:hover .dropdown-menu {
+    max-height: 300px; /* atau tinggi yang kamu perlukan */
+  }
+}
 
 /* Untuk mobile, dropdown dibuka manual */
 @media (max-width: 600px) {
@@ -568,6 +570,48 @@ footer {
   }
 }
 
-  .dropdown-menu.show {
-  max-height: 300px; 
+ .dropdown-menu.show {
+  max-height: 300px; /* Atur sesuai tinggi konten maksimal */
+}
+
+.intro-section {
+  background-color: #f9f9f9;
+  padding: 40px 20px;
+  text-align: center;
+  border-radius: 12px;
+  margin: 20px auto;
+  max-width: 800px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+.intro-icon img {
+  width: 60px;
+  margin-bottom: 20px;
+}
+
+.intro-section h2 {
+  font-size: 32px;
+  color: #444;
+}
+
+.subtitle {
+  color: #777;
+  font-style: italic;
+  margin-top: -10px;
+  margin-bottom: 10px;
+  letter-spacing: 1px;
+}
+
+.intro-line {
+  width: 60px;
+  border: 2px solid #d4bee9;
+  margin: 10px auto;
+}
+
+.description {
+  color: #555;
+  max-width: 600px;
+  margin: 0 auto;
+  font-size: 16px;
+  line-height: 1.6;
 }
