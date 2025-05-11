@@ -418,10 +418,16 @@ table tbody tr:hover {
   cursor: pointer;
 }
 
-/* MOBILE STYLE */
 @media (max-width: 600px) {
   .burger {
     display: block;
+    position: absolute;
+    right: 10px;
+    top: 12px;
+  }
+
+  .center-title {
+    font-size: 18px;
   }
    
   .menu-links {
