@@ -37,21 +37,17 @@
     }
 
   nav a {
-  color: #ECF3FB !important;
-  text-decoration: none;
-  padding: 12px 18px;
-  display: block;
-  font-weight: bold;         /* Tulisan tebal */
-  font-size: 17px;           /* Tulisan lebih besar */
-  transition: background 0.3s, color 0.3s;
-}
+      color: #ECF3FB;
+      text-decoration: none;
+      padding: 12px 18px;
+      display: block;
+      transition: background 0.3s, color 0.3s;
+    }
 
- nav a:hover {
-  background-color: #d4bee9;
-  color: #000 !important;
-  width: 100%;
-  box-sizing: border-box;
-}
+    nav a:hover {
+      background-color: #d4bee9;
+      color: #000;
+    }
 
     @media (max-width: 600px) {
       nav {
