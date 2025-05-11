@@ -461,7 +461,7 @@ table tbody tr:hover {
 }
 
 .tooltip-inner {
-  background-color: #9966CC !important;
+  background-color: #d9c7ec !important;
   color: #ECF3FB !important;
   font-weight: bold;
   font-size: 14px;
@@ -472,10 +472,10 @@ table tbody tr:hover {
 .tooltip.bs-tooltip-bottom .tooltip-arrow::before,
 .tooltip.bs-tooltip-start .tooltip-arrow::before,
 .tooltip.bs-tooltip-end .tooltip-arrow::before {
-  border-top-color: #9966CC !important;
-  border-bottom-color: #9966CC !important;
-  border-left-color: #9966CC !important;
-  border-right-color: #9966CC !important;
+  border-top-color: #d9c7ec !important;
+  border-bottom-color: #d9c7ec !important;
+  border-left-color: #d9c7ec !important;
+  border-right-color: #d9c7ec !important;
 }
 
 footer {
