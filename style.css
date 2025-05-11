@@ -460,6 +460,24 @@ table tbody tr:hover {
   }
 }
 
+.tooltip-inner {
+  background-color: #9966CC !important;
+  color: #ECF3FB !important;
+  font-weight: bold;
+  font-size: 14px;
+  border-radius: 6px;
+}
+
+.tooltip.bs-tooltip-top .tooltip-arrow::before,
+.tooltip.bs-tooltip-bottom .tooltip-arrow::before,
+.tooltip.bs-tooltip-start .tooltip-arrow::before,
+.tooltip.bs-tooltip-end .tooltip-arrow::before {
+  border-top-color: #9966CC !important;
+  border-bottom-color: #9966CC !important;
+  border-left-color: #9966CC !important;
+  border-right-color: #9966CC !important;
+}
+
 footer {
     background-color: #9966CC;
     color: #ECF3FB;
