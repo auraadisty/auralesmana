@@ -478,20 +478,31 @@ table tbody tr:hover {
   border-right-color: #9966CC !important;
 }
 
-.link-section a {
-  text-decoration: none;
-  color: #9966CC;
-  font-weight: bold;
-  font-size: 16px;
-  display: inline-flex;
-  align-items: center;
-  transition: color 0.3s, transform 0.2s;
+.link-box-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  margin-top: 20px;
+  justify-content: center;
 }
 
-.link-section a:hover {
-  color: #d4bee9;
-  transform: translateX(5px); /* efek geser kanan saat hover */
+.link-box {
+  background-color: #9966CC;
+  color: #ECF3FB;
+  padding: 12px 20px;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background 0.3s, transform 0.2s;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
+
+.link-box:hover {
+  background-color: #d4bee9;
+  color: #000;
+  transform: translateY(-2px);
+}
+
 
 footer {
     background-color: #9966CC;
