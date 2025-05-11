@@ -427,16 +427,7 @@ table tbody tr:hover {
   .burger {
     display: block;
   }
-
-  .logo-left {
-    display: none; /* Sembunyikan logo di mobile agar tidak bentrok */
-  }
-
-  .center-title {
-    font-size: 18px;
-  }
-}
-      
+   
   .menu-links {
     display: none;
     flex-direction: column;
