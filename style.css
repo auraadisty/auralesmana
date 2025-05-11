@@ -381,6 +381,80 @@ table tbody tr:hover {
     background-color: #673AB7;
 }
 
+/* Gaya umum nav (tampilan desktop) */
+.main-nav {
+  background-color: #9966CC;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  border-top: 1px solid #673ab7;
+  position: relative;
+}
+
+.main-nav a {
+  color: #ECF3FB;
+  text-decoration: none;
+  padding: 12px 18px;
+  font-weight: bold;
+  font-size: 16px;
+  display: inline-block;
+  transition: background 0.3s, color 0.3s;
+}
+
+.main-nav a:hover {
+  background-color: #d4bee9;
+  color: #000;
+  border-radius: 4px;
+}
+
+/* Burger menu hanya muncul di layar kecil */
+.burger {
+  display: none;
+  background-color: #d9c7ec;
+  border: none;
+  color: #000;
+  font-size: 28px;
+  padding: 10px 15px;
+  position: absolute;
+  left: 10px;
+  top: 10px;
+  z-index: 1000;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+/* Tampilan mobile */
+@media (max-width: 600px) {
+  .burger {
+    display: block;
+  }
+
+  .menu-links {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    background-color: #9966CC;
+    padding-top: 10px;
+  }
+
+  .menu-links a {
+    padding: 12px;
+    width: 100%;
+    text-align: center;
+    border-top: 1px solid #d4bee9;
+  }
+
+  .menu-links.show {
+    display: flex;
+  }
+
+  .main-nav {
+    flex-direction: column;
+    align-items: stretch;
+  }
+}
+
 footer {
     background-color: #9966CC;
     color: #ECF3FB;
