@@ -6,3 +6,10 @@ document.addEventListener("DOMContentLoaded", function () {
         navLinks.classList.toggle("active");
     });
 });
+
+  function toggleMenu() {
+    document.querySelector('.menu-links').classList.toggle('show');
+  }
+
+ const tooltipTriggerList = document.querySelectorAll('[data-bs-toggle="tooltip"]');
+  const tooltipList = [...tooltipTriggerList].map(el => new bootstrap.Tooltip(el));
