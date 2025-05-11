@@ -28,7 +28,7 @@
       color: #ECF3FB;
     }
 
-    nav {
+    .nav {
       background-color: #9966CC; /* amethys */
       display: flex;
       justify-content: center;
@@ -36,7 +36,7 @@
       border-top: 1px solid #673ab7; /* pale sky */
     }
 
- nav a {
+ .nav a {
       color: #ECF3FB;
       text-decoration: none;
       padding: 12px 18px;
@@ -44,13 +44,13 @@
       transition: background 0.3s, color 0.3s;
     }
 
-    nav a:hover {
+    .nav a:hover {
       background-color: #d4bee9;
       color: #000;
     }
 
     @media (max-width: 600px) {
-      nav {
+      .nav {
         flex-direction: column;
         align-items: center;
       }
