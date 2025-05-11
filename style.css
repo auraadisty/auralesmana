@@ -532,7 +532,7 @@ footer {
 .dropdown-menu {
   display: none;
   position: absolute;
-  background-color: #d4bee9;
+  background-color: #9966CC;
   min-width: 160px;
   box-shadow: 0px 2px 6px rgba(0,0,0,0.2);
   z-index: 999;
@@ -548,7 +548,7 @@ footer {
 }
 
 .dropdown-menu a:hover {
-  background-color: #9966CC;
+  background-color: #d4bee9;
   color: #000;
 }
 
@@ -570,3 +570,24 @@ footer {
   .dropdown-menu.show {
     display: block;
   }
+
+.dropdown-menu {
+  display: none;
+  flex-direction: column;
+  position: static;
+  background-color: #d4bee9; /* Ganti warna latar jadi lebih muda */
+  padding-left: 20px;
+  border-radius: 8px;
+}
+
+
+.dropdown-menu a {
+  color: #000;
+  padding: 10px;
+  text-decoration: none;
+}
+
+.dropdown-menu a:hover {
+  background-color: #cdb0e3;
+  color: #000;
+}
