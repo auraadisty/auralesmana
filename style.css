@@ -36,8 +36,8 @@
       border-top: 1px solid #673ab7; /* pale sky */
     }
 
-  nav a {
-      color: #ECF3FB !important;
+ nav a {
+      color: #ECF3FB;
       text-decoration: none;
       padding: 12px 18px;
       display: block;
@@ -47,6 +47,7 @@
     nav a:hover {
       background-color: #d4bee9;
       color: #000;
+    }
 
     @media (max-width: 600px) {
       nav {
