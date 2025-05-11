@@ -529,7 +529,7 @@ footer {
 }
 
 /* Dropdown menu */
-..dropdown-menu {
+.dropdown-menu {
   display: none;
   position: absolute;
   background-color: #9966CC;
@@ -596,6 +596,7 @@ footer {
   margin-top: -10px;
   margin-bottom: 10px;
   letter-spacing: 1px;
+  text-align: center;
 }
 
 .intro-line {
@@ -610,4 +611,5 @@ footer {
   margin: 0 auto;
   font-size: 16px;
   line-height: 1.6;
+  text-align: center;
 }
