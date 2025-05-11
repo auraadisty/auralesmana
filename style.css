@@ -530,7 +530,8 @@ footer {
 
 /* Dropdown menu */
 .dropdown-menu {
-  display: none;
+  max-height: 0;
+  overflow: hidden;
   position: absolute;
   background-color: #9966CC;
   min-width: 160px;
@@ -538,6 +539,8 @@ footer {
   z-index: 999;
   top: 100%;
   left: 0;
+  border-radius: 8px;
+  transition: max-height 0.4s ease;
 }
 
 .dropdown-menu a {
@@ -554,10 +557,8 @@ footer {
 
 /* Tampilkan dropdown saat hover di desktop */
 @media (min-width: 601px) {
-  .dropdown:hover .dropdown-menu {
-    display: block;
-  }
-}
+ .dropdown:hover .dropdown-menu {
+    max-height: 300px; 
 
 /* Untuk mobile, dropdown dibuka manual */
 @media (max-width: 600px) {
@@ -568,5 +569,5 @@ footer {
 }
 
   .dropdown-menu.show {
-    display: block;
-  }
+  max-height: 300px; 
+}
