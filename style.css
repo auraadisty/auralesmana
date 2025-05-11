@@ -528,69 +528,45 @@ footer {
   text-decoration: none;
 }
 
-/* Dropdown menu umum (desktop dan mobile) */
+/* Dropdown menu */
 .dropdown-menu {
   display: none;
-  flex-direction: column;
-  background-color: #d4bee9; /* Warna muda */
-  border-radius: 8px;
-  padding-left: 20px;
+  position: absolute;
+  background-color: #9966CC;
+  min-width: 160px;
+  box-shadow: 0px 2px 6px rgba(0,0,0,0.2);
   z-index: 999;
+  top: 100%;
+  left: 0;
 }
 
-/* Link di dropdown */
 .dropdown-menu a {
-  color: #000;
-  padding: 10px;
-  text-decoration: none;
+  color: #ECF3FB;
+  padding: 10px 16px;
   display: block;
+  text-decoration: none;
 }
 
 .dropdown-menu a:hover {
-  background-color: #cdb0e3;
+  background-color: #d4bee9;
   color: #000;
-}
-
-/* Dropdown aktif */
-.dropdown-menu.show {
-  display: block;
 }
 
 /* Tampilkan dropdown saat hover di desktop */
 @media (min-width: 601px) {
-  .dropdown-menu {
-    position: absolute;
-    top: 100%;
-    left: 0;
-    min-width: 160px;
-    box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.2);
-    background-color: #9966CC; /* Kembali ke warna header untuk desktop */
-  }
-
   .dropdown:hover .dropdown-menu {
     display: block;
   }
-
-  .dropdown-menu a {
-    color: #ECF3FB;
-  }
-
-  .dropdown-menu a:hover {
-    background-color: #d4bee9;
-    color: #000;
-  }
 }
 
-/* Tampilan mobile */
+/* Untuk mobile, dropdown dibuka manual */
 @media (max-width: 600px) {
   .dropdown-menu {
     position: static;
     box-shadow: none;
-    background-color: #d4bee9;
-  }
-
-  .dropdown-menu a {
-    color: #000;
   }
 }
 
+  .dropdown-menu.show {
+    display: block;
+  }
