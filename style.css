@@ -427,7 +427,11 @@ table tbody tr:hover {
   }
 
   .center-title {
+    text-align: left;
     font-size: 18px;
+    margin-left: 10px;
+    position: static;
+    transform: none;
   }
    
   .menu-links {
