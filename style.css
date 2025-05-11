@@ -44,7 +44,7 @@
       transition: background 0.3s, color 0.3s;
     }
 
-    .nav a:hover {
+    nav a:hover {
       background-color: #d4bee9;
       color: #000;
     }
