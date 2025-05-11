@@ -478,6 +478,21 @@ table tbody tr:hover {
   border-right-color: #9966CC !important;
 }
 
+.link-section a {
+  text-decoration: none;
+  color: #9966CC;
+  font-weight: bold;
+  font-size: 16px;
+  display: inline-flex;
+  align-items: center;
+  transition: color 0.3s, transform 0.2s;
+}
+
+.link-section a:hover {
+  color: #d4bee9;
+  transform: translateX(5px); /* efek geser kanan saat hover */
+}
+
 footer {
     background-color: #9966CC;
     color: #ECF3FB;
