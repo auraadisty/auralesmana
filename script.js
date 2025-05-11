@@ -24,3 +24,7 @@ document.addEventListener('DOMContentLoaded', function () {
     });
   }
 });
+
+function toggleDropdown() {
+  document.querySelector('.dropdown-menu').classList.toggle('show');
+}
