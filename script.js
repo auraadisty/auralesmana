@@ -14,3 +14,13 @@ document.addEventListener("DOMContentLoaded", function () {
   const tooltipTriggerList = document.querySelectorAll('[data-bs-toggle="tooltip"]');
   const tooltipList = [...tooltipTriggerList].map(el => new bootstrap.Tooltip(el));
 
+document.addEventListener('DOMContentLoaded', function () {
+  const dropdownToggle = document.querySelector('.dropdown-toggle');
+  if (dropdownToggle) {
+    dropdownToggle.addEventListener('click', function (e) {
+      e.preventDefault();
+      const menu = this.nextElementSibling;
+      menu.classList.toggle('show');
+    });
+  }
+});
