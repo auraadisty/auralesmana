@@ -22,7 +22,7 @@
 
 <nav class="main-nav menu-links">
   <a href="beranda.html">Beranda</a>
-  <a href="Tentang-saya.html">Tentang Saya</a>
+  <a class="nav-link" href="Tentang-saya.html" data-bs-toggle="tooltip" data-bs-placement="bottom" title="INi adalah informasi tentang saya">Tentang Saya</a>
   <a href="Hubungi-kami.html">Hubungi Kami</a>
   <a href="koleksi.html">Koleksi</a>
   <a href="Tabel_Perkalian.html">Tabel Perkalian</a>
@@ -156,5 +156,10 @@
     document.querySelector('.menu-links').classList.toggle('show');
   }
 </script>
+<script>
+  const tooltipTriggerList = document.querySelectorAll('[data-bs-toggle="tooltip"]');
+  const tooltipList = [...tooltipTriggerList].map(el => new bootstrap.Tooltip(el));
+</script>
+
 </body>
 </html>
