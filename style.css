@@ -407,26 +407,31 @@ table tbody tr:hover {
   border-radius: 4px;
 }
 
-/* Burger menu hanya muncul di layar kecil */
 .burger {
   display: none;
   background-color: #d9c7ec;
   border: none;
   color: #000;
-  font-size: 28px;
-  padding: 10px 15px;
-  position: absolute;
-  left: 10px;
-  top: 10px;
-  z-index: 1000;
+  font-size: 26px;
+  padding: 6px 12px;
   border-radius: 4px;
   cursor: pointer;
 }
 
+/* MOBILE STYLE */
 @media (max-width: 600px) {
   .burger {
     display: block;
   }
+
+  .center-title {
+    font-size: 18px;
+  }
+
+  .logo-left img {
+    height: 30px;
+  }
+}
    
   .menu-links {
     display: none;
