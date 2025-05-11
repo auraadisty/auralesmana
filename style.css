@@ -37,7 +37,7 @@
     }
 
   nav a {
-      color: #ECF3FB;
+      color: #ECF3FB !important;
       text-decoration: none;
       padding: 12px 18px;
       display: block;
@@ -47,6 +47,8 @@
     nav a:hover {
       background-color: #d4bee9;
       color: #000;
+      width: 100%;
+      box-sizing: border-box;
     }
 
     @media (max-width: 600px) {
