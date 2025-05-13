@@ -29,11 +29,13 @@ function toggleDropdown() {
   document.querySelector('.dropdown-menu').classList.toggle('show');
 }
 
- const swiper = new Swiper(".mySwiper", {
+// Swiper Initialization
+  const swiper = new Swiper(".mySwiper", {
     navigation: {
       nextEl: ".swiper-button-next",
       prevEl: ".swiper-button-prev",
     },
-    slidesPerView: 3, // misalnya ingin 3 kotak tampil
-    spaceBetween: 20,
+    slidesPerView: 3, // Tampilkan 3 slide
+    spaceBetween: 20, // Spasi antar slide
   });
+});
