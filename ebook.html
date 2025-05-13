@@ -1,1 +1,49 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Perpustakaan Aura</title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
 
+</head>
+<body>
+<header class="header">
+  <div class="logo-left">
+    <img src="https://cdn-icons-png.flaticon.com/512/29/29302.png" alt="Logo Buku">
+  </div>
+
+  <div class="center-title">PERPUSTAKAAN AURA</div>
+
+  <button class="burger" onclick="toggleMenu()">☰</button>
+</header>
+
+<nav class="main-nav menu-links">
+  <a href="beranda.html">Beranda</a>
+  <a class="nav-link" href="Tentang-saya.html" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Pelajari lebih lanjut tentang saya di sini">Tentang Saya</a>
+  <a href="Hubungi-kami.html">Hubungi Kami</a>
+ <div class="dropdown">
+<a href="koleksi.html" class="dropdown-toggle" onclick="toggleDropdown(event)">Koleksi</a>
+  <ul class="dropdown-menu">
+        <a href="koleksi-pribadi.html">Koleksi Pribadi</a>
+        <a href="ebook.html">E-Book</a>
+        <a href="tugas.html">My Assignment</a>
+      </div>
+    </div>
+  <a href="Tabel_Perkalian.html">Tabel Perkalian</a>
+  <a href="Formulir_kunjungan.html">Formulir Kunjungan</a>
+</nav>
+  
+<section class="intro-section">
+  <div class="intro-icon">
+    <img src="https://cdn-icons-png.flaticon.com/512/29/29302.png" alt="Logo Buku">
+  </div>
+  <h2>Buku Elektronik</h2>
+  <p class="subtitle">EBOOK</p>
+  <hr class="intro-line">
+  <p class="description">
+    BUku elektronik yang dapat diakses dan diunduh secara gratis.
+  </p>
+</section>
