@@ -29,11 +29,11 @@ function toggleDropdown() {
   document.querySelector('.dropdown-menu').classList.toggle('show');
 }
 
-const swiper = new Swiper(".mySwiper", {
-  navigation: {
-    nextEl: ".swiper-button-next",
-    prevEl: ".swiper-button-prev",
-  },
-  loop: false,
-});
-
+  const swiper = new Swiper(".mySwiper", {
+    navigation: {
+      nextEl: ".swiper-button-next",
+      prevEl: ".swiper-button-prev",
+    },
+    slidesPerView: 3, // misalnya ingin 3 kotak tampil
+    spaceBetween: 20,
+  });
