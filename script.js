@@ -29,7 +29,7 @@ function toggleDropdown() {
   document.querySelector('.dropdown-menu').classList.toggle('show');
 }
 
-  const swiper = new Swiper(".mySwiper", {
+ const swiper = new Swiper(".mySwiper", {
     navigation: {
       nextEl: ".swiper-button-next",
       prevEl: ".swiper-button-prev",
