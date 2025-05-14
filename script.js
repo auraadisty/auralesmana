@@ -28,14 +28,3 @@ document.addEventListener('DOMContentLoaded', function () {
 function toggleDropdown() {
   document.querySelector('.dropdown-menu').classList.toggle('show');
 }
-
-// Swiper Initialization
-  const swiper = new Swiper(".mySwiper", {
-    navigation: {
-      nextEl: ".swiper-button-next",
-      prevEl: ".swiper-button-prev",
-    },
-    slidesPerView: 3, // Tampilkan 3 slide
-    spaceBetween: 20, // Spasi antar slide
-  });
-});
