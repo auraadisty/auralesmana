@@ -4,34 +4,35 @@
     <meta charset="UTF-8">
     <title>Tabel Perkalian 10x10</title>
     <style>
-        body {
-            background-color: #800000; /* Maroon */
-            font-family: Arial, sans-serif;
-            padding: 20px;
-            color: #fff8e1; /* Krem */
-        }
-        table {
-            border-collapse: collapse;
-            margin: auto;
-            background-color: #fff8e1; /* Krem */
-            box-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
-        }
-        th, td {
-            border: 1px solid #800000;
-            padding: 10px 15px;
-            text-align: center;
-            transition: background-color 0.3s, color 0.3s;
-        }
-        th {
-            background-color: #800000;
-            color: #fff8e1;
-        }
-        td:hover {
-            background-color: #800000;
-            color: #fff8e1;
-            cursor: pointer;
-        }
-    </style>
+    body {
+        background-color: #9966CC; /* Ungu Lembut */
+        font-family: Arial, sans-serif;
+        padding: 20px;
+        color: #fdf6ff; /* Putih keunguan lembut */
+    }
+    table {
+        border-collapse: collapse;
+        margin: auto;
+        background-color: #f3e8fd; /* Latar belakang krem keunguan */
+        box-shadow: 0 0 10px rgba(153, 102, 204, 0.5); /* Efek glow ungu */
+    }
+    th, td {
+        border: 1px solid #7a52a3;
+        padding: 10px 15px;
+        text-align: center;
+        transition: background-color 0.3s, color 0.3s;
+    }
+    th {
+        background-color: #7a52a3; /* Ungu lebih gelap */
+        color: #f3e8fd; /* Teks lembut */
+    }
+    td:hover {
+        background-color: #d4bee9; /* Hover ungu muda */
+        color: #000;
+        cursor: pointer;
+    }
+</style>
+    
 </head>
 <body>
 
