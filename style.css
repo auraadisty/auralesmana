@@ -709,3 +709,11 @@ footer {
   cursor: pointer;
 }
 
+#cookie-banner a {
+  color: #4b0082; /* Ungu tua (Indigo) */
+  text-decoration: underline;
+}
+
+#cookie-banner a:hover {
+  color: #2e004f; /* Ungu lebih gelap saat hover */
+}
