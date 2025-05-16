@@ -167,10 +167,32 @@
     href="https://statcounter.com/" target="_blank"><img class="statcounter"
     src="https://c.statcounter.com/13116289/0/cb7e7e70/0/" alt="hit counter"
     referrerPolicy="no-referrer-when-downgrade"></a></div></noscript>
-    <!-- End of Statcounter Code -->
+
+  <!-- Cookie Banner -->
+<div id="cookie-banner" class="cookie-banner">
+  <p>Website ini menggunakan cookie untuk meningkatkan pengalaman Anda. <a href="#">Pelajari lebih lanjut</a>.</p>
+  <button onclick="acceptAllCookies()">Terima Semua</button>
+  <button onclick="openCookieSettings()">Kelola Cookie</button>
+</div>
+
+<!-- Cookie Settings Modal -->
+<div id="cookie-settings-modal" class="cookie-modal">
+  <div class="cookie-modal-content">
+    <h3>Pengaturan Cookie</h3>
+    <form id="cookie-settings-form">
+      <label><input type="checkbox" name="essential" checked disabled> Cookie Esensial (wajib)</label><br>
+      <label><input type="checkbox" name="analytics"> Cookie Analitik</label><br>
+      <label><input type="checkbox" name="marketing"> Cookie Pemasaran</label><br>
+      <div class="cookie-modal-actions">
+        <button type="button" onclick="saveCookieSettings()">Simpan</button>
+        <button type="button" onclick="closeCookieSettings()">Batal</button>
+      </div>
+    </form>
+  </div>
+</div>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
  <script src="script.js"></script>
-
+  
 </body>
 </html>
