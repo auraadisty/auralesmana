@@ -41,35 +41,32 @@ function toggleDropdown() {
     },
   });
 
-// Fungsi untuk menyetel cookie
+// Fungsi bantuan cookie
 function setCookie(name, value, days) {
-  const date = new Date();
-  date.setTime(date.getTime() + (days*24*60*60*1000));
-  const expires = "expires=" + date.toUTCString();
-  document.cookie = name + "=" + value + ";" + expires + ";path=/";
+  const d = new Date();
+  d.setTime(d.getTime() + (days * 24 * 60 * 60 * 1000));
+  document.cookie = `${name}=${value};expires=${d.toUTCString()};path=/`;
 }
 
-// Fungsi untuk membaca cookie
 function getCookie(name) {
   const cname = name + "=";
-  const decodedCookie = decodeURIComponent(document.cookie);
-  const ca = decodedCookie.split(';');
+  const ca = document.cookie.split(';');
   for (let i = 0; i < ca.length; i++) {
-    let c = ca[i];
-    while (c.charAt(0) == ' ') c = c.substring(1);
-    if (c.indexOf(cname) == 0) return c.substring(cname.length, c.length);
+    let c = ca[i].trim();
+    if (c.indexOf(cname) == 0) {
+      return c.substring(cname.length, c.length);
+    }
   }
   return "";
 }
 
-// Fungsi menyimpan nama pengguna ke cookie
+// Username handler
 function setUserName() {
   const name = document.getElementById("username").value;
   setCookie("userName", name, 7);
   showWelcome();
 }
 
-// Fungsi menampilkan pesan sambutan
 function showWelcome() {
   const user = getCookie("userName");
   if (user) {
@@ -77,54 +74,37 @@ function showWelcome() {
   }
 }
 
-// Panggil saat halaman dimuat
-document.addEventListener("DOMContentLoaded", showWelcome);
+// Cookie consent handlers
+function acceptAllCookies() {
+  setCookie("cookie_consent", "all", 30);
+  document.getElementById("cookie-banner").style.display = "none";
+}
 
- function setCookie(name, value, days) {
-    const d = new Date();
-    d.setTime(d.getTime() + (days*24*60*60*1000));
-    document.cookie = `${name}=${value};expires=${d.toUTCString()};path=/`;
+function openCookieSettings() {
+  document.getElementById("cookie-settings-modal").style.display = "block";
+}
+
+function closeCookieSettings() {
+  document.getElementById("cookie-settings-modal").style.display = "none";
+}
+
+function saveCookieSettings() {
+  const analytics = document.querySelector('input[name="analytics"]').checked;
+  const marketing = document.querySelector('input[name="marketing"]').checked;
+
+  setCookie("cookie_analytics", analytics ? "true" : "false", 30);
+  setCookie("cookie_marketing", marketing ? "true" : "false", 30);
+  setCookie("cookie_consent", "custom", 30);
+
+  closeCookieSettings();
+  document.getElementById("cookie-banner").style.display = "none";
+}
+
+// Inisialisasi saat halaman dimuat
+document.addEventListener("DOMContentLoaded", function () {
+  showWelcome();
+
+  if (!getCookie("cookie_consent")) {
+    document.getElementById("cookie-banner").style.display = "block";
   }
-
-  function getCookie(name) {
-    const cname = name + "=";
-    const ca = document.cookie.split(';');
-    for (let i = 0; i < ca.length; i++) {
-      let c = ca[i].trim();
-      if (c.indexOf(cname) == 0) {
-        return c.substring(cname.length, c.length);
-      }
-    }
-    return "";
-  }
-
-  function acceptAllCookies() {
-    setCookie("cookie_consent", "all", 30);
-    document.getElementById("cookie-banner").style.display = "none";
-  }
-
-  function openCookieSettings() {
-    document.getElementById("cookie-settings-modal").style.display = "block";
-  }
-
-  function closeCookieSettings() {
-    document.getElementById("cookie-settings-modal").style.display = "none";
-  }
-
-  function saveCookieSettings() {
-    const analytics = document.querySelector('input[name="analytics"]').checked;
-    const marketing = document.querySelector('input[name="marketing"]').checked;
-
-    setCookie("cookie_analytics", analytics ? "true" : "false", 30);
-    setCookie("cookie_marketing", marketing ? "true" : "false", 30);
-    setCookie("cookie_consent", "custom", 30);
-
-    closeCookieSettings();
-    document.getElementById("cookie-banner").style.display = "none";
-  }
-
-  window.onload = function() {
-    if (!getCookie("cookie_consent")) {
-      document.getElementById("cookie-banner").style.display = "block";
-    }
-  };
+});
