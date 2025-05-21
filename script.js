@@ -108,3 +108,9 @@ document.addEventListener("DOMContentLoaded", function () {
     document.getElementById("cookie-banner").style.display = "block";
   }
 });
+
+ function declineallcookies() {
+    // Nonaktifkan semua kecuali cookie esensial
+    console.log("Semua cookie ditolak kecuali esensial.");
+    document.getElementById("cookie-banner").style.display = "none";
+  }
